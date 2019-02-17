@@ -20,7 +20,8 @@ import {
   faPencilRuler,
   faChartLine,
   faHandsHelping,
-  faMagic
+  faMagic,
+  faUsers
 } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -89,24 +90,31 @@ function Philosophy() {
   const values = [
     {
       title: "Attention to Detail",
-      description:
-        "In the ballpark figure space, industry is globally calibrating its customer-focused brands. Ethically touching base about integrating game changers will make us leaders in the wholesale stakeholder industry.",
+      description: [
+        "The differences between ‘ordinary’ and ‘delightful’ experiences lie in the details most people would not even bother to think about.",
+        "We don't cut corners, make careless mistakes or deliver sloppy work. We squeeze everything we have into every second and every pixel."
+      ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faPencilRuler,
       iconColor: "grey"
     },
     {
       title: "Local Talent",
-      description:
-        "In the ballpark figure space, industry is globally calibrating its customer-focused brands. Ethically touching base about integrating game changers will make us leaders in the wholesale stakeholder industry.",
+      description: [
+        "Our clients trust us because we work exclusively with local talent from the United Kingdom.",
+        "We will never outsource our clients' work to cheap, unreliable third parties halfway across the world.",
+        "It just isn't worth it."
+      ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faFistRaised,
       iconColor: "grey"
     },
     {
-      title: "We Focus on Impact",
-      description:
-        "We focus on meeting every client's specific needs and priorities in order to maximise the benefit our work has on their growth. We go the extra mile to make sure we understand our clients' audiences, and to make sure that we are meeting both their expectations and their needs.",
+      title: "Impact-Focused",
+      description: [
+        "We focus on meeting every client's individual needs and specific priorities in order to maximise the benefit our work has on their growth.",
+        "No frills or gimmicks, just results."
+      ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faChartLine,
       iconColor: "grey"
@@ -115,25 +123,32 @@ function Philosophy() {
 
   const values2 = [
     {
-      title: "We Care About Your Audience",
-      description:
-        "In the ballpark figure space, industry is globally calibrating its customer-focused brands. Ethically touching base about integrating game changers will make us leaders in the wholesale stakeholder industry.",
+      title: "We Listen to Your Audience",
+      description: [
+        "From the moment we start a project we engage directly with the target audience, going the extra mile to make sure we understand their needs and expectations, and we continually iterate until they are all satisfied.",
+        "After all, perfection takes a few iterations - nobody gets it completely right on the first try. "
+      ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
-      icon: faMagic,
+      icon: faUsers,
       iconColor: "grey"
     },
     {
-      title: "Magic",
-      description:
-        "In the ballpark figure space, industry is globally calibrating its customer-focused brands. Ethically touching base about integrating game changers will make us leaders in the wholesale stakeholder industry.",
+      title: "'Magic'",
+      description: [
+        "We aren't afraid to use the latest and greatest in cutting-edge technologies in everything we do.",
+        "We are also big believers in minimalism and 'keeping it simple'",
+        "This magic combination allows us to deliver high quality user experiences on par with the biggest names in your industry."
+      ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faMagic,
       iconColor: "grey"
     },
     {
       title: "Long Term Support",
-      description:
-        "In the ballpark figure space, industry is globally calibrating its customer-focused brands. Ethically touching base about integrating game changers will make us leaders in the wholesale stakeholder industry.",
+      description: [
+        "Unlike many agencies and consultancies, we won't disappear once you've paid the bill.",
+        "We are proud of our work, and happy to provide long-term assistance to all our clients."
+      ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faHandsHelping,
       iconColor: "grey"
@@ -143,41 +158,34 @@ function Philosophy() {
   return (
     <div>
       <Section backgroundColor="dark" textColor="light" textAlign="centered">
-        <Container fluid>
-          <Column.Group>
-            <Column size={10} offset={1}>
-              <Container textAlign="centered">
-                <Title textColor="light">Philosophy & Values</Title>
+        <Column.Group>
+          <Column size={10} offset={1}>
+            <Title textColor="light">Philosophy & Values</Title>
 
-                <Block />
-                <p>
-                  At <strong style={{ color: "white" }}>RSTLSS</strong> we have
-                  a{" "}
-                  <strong style={{ color: "white" }}>strong commitment</strong>{" "}
-                  to our{" "}
-                  <strong style={{ color: "white" }}>
-                    philosophy and values
-                  </strong>
-                  , which influence everything we do.
-                </p>
-                <Block />
-                <p>
-                  With{" "}
-                  <strong style={{ color: "white" }}>
-                    over a decade and a half
-                  </strong>
-                  's experience in the creative industry, we have{" "}
-                  <strong style={{ color: "white" }}>learned a lot</strong>{" "}
-                  about what it takes{" "}
-                  <strong style={{ color: "white" }}>
-                    {" "}
-                    to be successful in today's digital age:
-                  </strong>
-                </p>
-              </Container>
-            </Column>
-          </Column.Group>
-        </Container>
+            <Block />
+            <p>
+              At <strong style={{ color: "white" }}>RSTLSS</strong> we have a{" "}
+              <strong style={{ color: "white" }}>strong commitment</strong> to
+              our{" "}
+              <strong style={{ color: "white" }}>philosophy and values</strong>,
+              which influence everything we do.
+            </p>
+            <Block />
+            <p>
+              With{" "}
+              <strong style={{ color: "white" }}>
+                over a decade and a half
+              </strong>
+              's experience in the creative industry, we have{" "}
+              <strong style={{ color: "white" }}>learned a lot</strong> about
+              what it takes{" "}
+              <strong style={{ color: "white" }}>
+                {" "}
+                to be successful in today's digital age:
+              </strong>
+            </p>
+          </Column>
+        </Column.Group>
         <PhilosophyCards values={values} />
         <PhilosophyCards values={values2} />
         <p>
@@ -202,6 +210,9 @@ type Value = {
 
 function PhilosophyCards(props) {
   const { values } = props;
+  const descriptionStyle = {
+    marginBottom: "10px"
+  };
   return (
     <Column.Group centered>
       {values.map((value, index) => (
@@ -220,7 +231,9 @@ function PhilosophyCards(props) {
                 />
               </Icon>
               <Title>{value.title}</Title>
-              {value.description}
+              {value.description.map(description => (
+                <p style={descriptionStyle}>{description}</p>
+              ))}
             </Card.Content>
           </Card>
         </Column>
