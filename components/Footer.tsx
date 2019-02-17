@@ -8,6 +8,25 @@ const LayoutFooter = () => (
   <Footer>
     <Content textAlign="centered">
       <p>
+        <a href="mailto:rai@rbutera.com">
+          <img
+            alt="RSTLSS"
+            src="/static/img/logo/full.svg"
+            style={{
+              height: "20px",
+              verticalAlign: "baseline",
+              position: "relative",
+              top: "4px"
+            }}
+          />
+        </a>{" "}
+        - a{" "}
+        <a href="mailto:rai@rbutera.com">
+          <strong>CLOAKROOM LIMITED</strong>
+        </a>{" "}
+        group.
+      </p>
+      <p>
         <strong>Hand-crafted with</strong>{" "}
         <Icon color="danger">
           <FontAwesomeIcon icon={faHeart} />
@@ -21,38 +40,7 @@ const LayoutFooter = () => (
             basePath="/static/img/flags"
           />
         </Icon>{" "}
-        <strong>United Kingdom</strong> by{" "}
-        <a href="mailto:rai@rbutera.com">
-          <img
-            alt="RSTLSS"
-            src="/static/img/logo/full.svg"
-            style={{
-              height: "20px",
-              verticalAlign: "baseline",
-              position: "relative",
-              top: "4px"
-            }}
-          />
-        </a>
-        , a{" "}
-        <a href="mailto:rai@rbutera.com">
-          <strong>CLOAKROOM LIMITED</strong>
-        </a>{" "}
-        group.
-      </p>
-      <p>
-        The source code for this website is available under the{" "}
-        <a
-          rel="license"
-          href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
-        >
-          CC BY NC ND 4.0
-        </a>{" "}
-        license at{" "}
-        <Icon>
-          <FontAwesomeIcon icon={faGithub} />
-        </Icon>{" "}
-        GitHub
+        <strong>United Kingdom</strong>
       </p>
 
       <p>
