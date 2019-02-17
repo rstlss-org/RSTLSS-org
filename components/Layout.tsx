@@ -1,14 +1,14 @@
-import "./layout.scss";
-
+import "./layout.sass";
+import { Content } from "rbx";
 import Header from "./Header";
+import LayoutFooter from "./Footer";
 
 const Layout = props => (
-  <section className="section">
-    <div className="container">
-      <Header />
-      {props.children}
-    </div>
-  </section>
+  <Content>
+    <Header />
+    {props.children}
+    <LayoutFooter />
+  </Content>
 );
 
 export default Layout;

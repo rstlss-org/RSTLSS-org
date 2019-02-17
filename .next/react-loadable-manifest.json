@@ -7,10 +7,10 @@
       "publicPath": "static/chunks/0.js"
     }
   ],
-  "./layout.scss": [
+  "./layout.sass": [
     {
-      "id": "./components/layout.scss",
-      "name": "./components/layout.scss",
+      "id": "./components/layout.sass",
+      "name": "./components/layout.sass",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
@@ -18,6 +18,12 @@
   "undefined": [
     {
       "id": 2,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 3,
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
