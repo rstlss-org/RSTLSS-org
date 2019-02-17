@@ -1,8 +1,12 @@
-import Header from "../components/Header";
+// pages/index.js
+
+import Layout from "../components/Layout";
 
 export default () => (
-  <div>
-    <Header />
-    <p>Hello Next.js</p>
-  </div>
+  <Layout>
+    <h1 class="title">Hello World</h1>
+    <p class="subtitle">
+      My first website with <strong>Bulma</strong>!
+    </p>
+  </Layout>
 );
