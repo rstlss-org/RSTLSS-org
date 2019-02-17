@@ -50,7 +50,9 @@ const LayoutFooter = () => (
         </Icon>{" "}
         GitHub
       </p>
-      <p>&copy; 2019 RSTLSS</p>
+      <p>
+        &copy; 2019 <strong>RSTLSS</strong>
+      </p>
     </Content>
   </Footer>
 );
