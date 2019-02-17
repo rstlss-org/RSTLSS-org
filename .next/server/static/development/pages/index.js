@@ -110,7 +110,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_world_flags__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-world-flags */ "react-world-flags");
+/* harmony import */ var react_world_flags__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_world_flags__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Volumes/bigmanting/dev/rstlss/rstlss-org/components/Footer.tsx";
+
 
 
 
@@ -120,66 +123,87 @@ var LayoutFooter = function LayoutFooter() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_1__["Footer"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_1__["Content"], {
     textAlign: "centered",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
-  }, "Hand-crafted in the United Kingdom with", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
+  }, "Made in", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_world_flags__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    code: "uk",
+    fallback: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, "the United Kingdom"),
+    height: "24",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Hand-crafted with", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
     color: "danger",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faHeart"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 21
     },
     __self: this
   })), " ", "by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 23
     },
     __self: this
   }, "RSTLSS"), ", a ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "mailto:",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 23
     },
     __self: this
   }, "CLOAKROOM LIMITED"), " ", "group."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 26
     },
     __self: this
   }, "The source code for this website is available under the", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://opensource.org/licenses/mit-license.php",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 28
     },
     __self: this
   }, "MIT License"), " ", "at Github"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 33
     },
     __self: this
   }, "\xA9 2019")));
@@ -554,6 +578,17 @@ module.exports = require("rbx");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-world-flags":
+/*!************************************!*\
+  !*** external "react-world-flags" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-world-flags");
 
 /***/ })
 
