@@ -11,11 +11,14 @@ const Header = () => (
   <Navbar color="black">
     <Navbar.Brand>
       <Navbar.Item as="div" href="#">
-        <img
-          src="./static/img/logo/white.png"
-          alt="RSTLSS"
-          role="presentation"
-        />
+        <Link href="/">
+          <img
+            src="./static/img/logo/white.png"
+            alt="RSTLSS"
+            role="presentation"
+            style={{ cursor: "pointer" }}
+          />
+        </Link>
       </Navbar.Item>
       <Navbar.Burger />
     </Navbar.Brand>
@@ -25,7 +28,7 @@ const Header = () => (
       <Navbar.Segment align="end">
         <Navbar.Item as="div">
           <Link href="/">
-            <a>Home</a>
+            <a>Home / About</a>
           </Link>
         </Navbar.Item>
         <Navbar.Item as="div" dropdown>
@@ -98,6 +101,11 @@ const Header = () => (
             <Navbar.Item as="div">
               <Link href="/showcases/">
                 <a>Hypegen</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/showcases/">
+                <a>RSTLSS BEATS</a>
               </Link>
             </Navbar.Item>
           </Navbar.Dropdown>
