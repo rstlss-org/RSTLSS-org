@@ -1,14 +1,15 @@
 import "./layout.sass";
-import { Content } from "rbx";
 import Header from "./Header";
 import LayoutFooter from "./Footer";
 
+import { Container } from "rbx";
+
 const Layout = props => (
-  <Content>
+  <div>
     <Header />
     {props.children}
     <LayoutFooter />
-  </Content>
+  </div>
 );
 
 export default Layout;

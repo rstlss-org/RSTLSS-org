@@ -8,7 +8,7 @@ const LayoutFooter = () => (
   <Footer>
     <Content textAlign="centered">
       <p>
-        Hand-crafted with{" "}
+        <strong>Hand-crafted with</strong>{" "}
         <Icon color="danger">
           <FontAwesomeIcon icon={faHeart} />
         </Icon>{" "}
@@ -21,7 +21,7 @@ const LayoutFooter = () => (
             basePath="/static/img/flags"
           />
         </Icon>{" "}
-        United Kingdom by{" "}
+        <strong>United Kingdom</strong> by{" "}
         <a href="mailto:rai@rbutera.com">
           <img
             alt="RSTLSS"
@@ -34,7 +34,11 @@ const LayoutFooter = () => (
             }}
           />
         </a>
-        , a <a href="mailto:rai@rbutera.com">CLOAKROOM LIMITED</a> group.
+        , a{" "}
+        <a href="mailto:rai@rbutera.com">
+          <strong>CLOAKROOM LIMITED</strong>
+        </a>{" "}
+        group.
       </p>
       <p>
         The source code for this website is available under the{" "}
@@ -50,9 +54,13 @@ const LayoutFooter = () => (
         </Icon>{" "}
         GitHub
       </p>
+
       <p>
-        &copy; 2019 <strong>RSTLSS</strong>
+        <em>
+          "stay <strong>RSTLSS</strong>"
+        </em>
       </p>
+      <p>&copy; 2019</p>
     </Content>
   </Footer>
 );

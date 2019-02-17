@@ -8,7 +8,7 @@ const linkStyle = {
 };
 
 const Header = () => (
-  <Navbar color="black">
+  <Navbar fixed="top" color="black">
     <Navbar.Brand>
       <Navbar.Item as="div" href="#">
         <Link href="/">
