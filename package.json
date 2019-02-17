@@ -1,0 +1,10 @@
+{
+  "name": "rstlss-org",
+  "version": "0.0.1",
+  "description": "The RSTLSS.org Website",
+  "main": "index.js",
+  "repository": "https://github.com/Raigasm/rstlss-org",
+  "author": "Rai Butera",
+  "license": "UNLICENSED",
+  "private": true
+}
