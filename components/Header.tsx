@@ -7,27 +7,10 @@ const linkStyle = {
   marginRight: 15
 };
 
-// const Header = () => (
-//   <div>
-//     <Link href="/">
-//       <a style={linkStyle}>Home</a>
-//     </Link>
-//     <Link href="/services">
-//       <a style={linkStyle}>Services</a>
-//     </Link>
-//     <Link href="/projects">
-//       <a style={linkStyle}>Projects</a>
-//     </Link>
-//     <Link href="/contact">
-//       <a style={linkStyle}>Contact Us</a>
-//     </Link>
-//   </div>
-// );
-
 const Header = () => (
   <Navbar color="black">
     <Navbar.Brand>
-      <Navbar.Item href="#">
+      <Navbar.Item as="div" href="#">
         <img
           src="./static/img/logo/white.png"
           alt="RSTLSS"
@@ -40,42 +23,115 @@ const Header = () => (
       <Navbar.Segment align="start" />
 
       <Navbar.Segment align="end">
-        <Navbar.Item>
+        <Navbar.Item as="div">
           <Link href="/">
             <a>Home</a>
           </Link>
         </Navbar.Item>
-        <Navbar.Item>
-          <Link href="/services">
-            <a>Skills & Services</a>
-          </Link>
+        <Navbar.Item as="div" dropdown>
+          <Navbar.Link>
+            <Link href="/">
+              <a>Services</a>
+            </Link>
+          </Navbar.Link>
+          <Navbar.Dropdown>
+            <Navbar.Item as="div">
+              <Link href="/">
+                <a>Media</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/">
+                <a>Branding</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/">
+                <a>Web</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/">
+                <a>App</a>
+              </Link>
+            </Navbar.Item>
+          </Navbar.Dropdown>
         </Navbar.Item>
-        <Navbar.Item dropdown>
+        <Navbar.Item as="div" dropdown>
           <Navbar.Link>
             <Link href="/projects">
               <a>Projects</a>
             </Link>
           </Navbar.Link>
           <Navbar.Dropdown>
-            <Navbar.Item>
+            <Navbar.Item as="div">
               <Link href="/projects">
                 <a>Our Work</a>
               </Link>
             </Navbar.Item>
             <Navbar.Divider />
-            <Navbar.Item>
+            <Navbar.Item as="div">
               <Link href="/showcases/cloakroom">
                 <a>Cloakroom</a>
               </Link>
             </Navbar.Item>
-            <Navbar.Item>
+            <Navbar.Item as="div">
               <Link href="/showcases/chan">
                 <a>Chan</a>
               </Link>
             </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/showcases/JRNL">
+                <a>Jour</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/showcases/">
+                <a>RAIGASM</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/showcases/tekkers">
+                <a>Tekkers</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/showcases/">
+                <a>Hypegen</a>
+              </Link>
+            </Navbar.Item>
           </Navbar.Dropdown>
         </Navbar.Item>
-        <Navbar.Item>
+        <Navbar.Item as="div" dropdown>
+          <Navbar.Link>
+            <Link href="/join">
+              <a>Join RSTLSS</a>
+            </Link>
+          </Navbar.Link>
+          <Navbar.Dropdown>
+            <Navbar.Item as="div">
+              <Link href="/join">
+                <a>Work with Us</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/join">
+                <a>Hipsters</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/join">
+                <a>Hackers</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item as="div">
+              <Link href="/join">
+                <a>Hustlers</a>
+              </Link>
+            </Navbar.Item>
+          </Navbar.Dropdown>
+        </Navbar.Item>
+        <Navbar.Item as="div">
           <Button.Group>
             <Button color="success">
               <strong>Hire Us</strong>
