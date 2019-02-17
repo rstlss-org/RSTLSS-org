@@ -6,5 +6,14 @@
   "repository": "https://github.com/Raigasm/rstlss-org",
   "author": "Rai Butera",
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
+    "next": "^8.0.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.3"
+  }
 }
