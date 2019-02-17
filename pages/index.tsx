@@ -96,7 +96,7 @@ function Philosophy() {
       iconColor: "grey"
     },
     {
-      title: "UK Talent",
+      title: "Local Talent",
       description:
         "In the ballpark figure space, industry is globally calibrating its customer-focused brands. Ethically touching base about integrating game changers will make us leaders in the wholesale stakeholder industry.",
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
@@ -104,7 +104,7 @@ function Philosophy() {
       iconColor: "grey"
     },
     {
-      title: "We Focus on Growth",
+      title: "We Focus on Impact",
       description:
         "We focus on meeting every client's specific needs and priorities in order to maximise the benefit our work has on their growth. We go the extra mile to make sure we understand our clients' audiences, and to make sure that we are meeting both their expectations and their needs.",
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
@@ -142,42 +142,43 @@ function Philosophy() {
 
   return (
     <div>
-      <Section backgroundColor="success" textColor="light">
-        <Column.Group>
-          <Column size={10} offset={1}>
-            <Container textAlign="centered">
-              <Title textColor="light">Philosophy & Values</Title>
+      <Section backgroundColor="dark" textColor="light" textAlign="centered">
+        <Container fluid>
+          <Column.Group>
+            <Column size={10} offset={1}>
+              <Container textAlign="centered">
+                <Title textColor="light">Philosophy & Values</Title>
 
-              <Block />
-              <p>
-                At <strong style={{ color: "white" }}>RSTLSS</strong> we have a{" "}
-                <strong style={{ color: "white" }}>strong commitment</strong> to
-                our{" "}
-                <strong style={{ color: "white" }}>
-                  philosophy and values
-                </strong>
-                , which influence everything we do.
-              </p>
-              <Block />
-              <p>
-                With{" "}
-                <strong style={{ color: "white" }}>
-                  over a decade and a half
-                </strong>
-                's experience in the creative industry, we have{" "}
-                <strong style={{ color: "white" }}>learned a lot</strong> about
-                what it takes{" "}
-                <strong style={{ color: "white" }}>
-                  {" "}
-                  to be successful in today's digital age:
-                </strong>
-              </p>
-            </Container>
-          </Column>
-        </Column.Group>
+                <Block />
+                <p>
+                  At <strong style={{ color: "white" }}>RSTLSS</strong> we have
+                  a{" "}
+                  <strong style={{ color: "white" }}>strong commitment</strong>{" "}
+                  to our{" "}
+                  <strong style={{ color: "white" }}>
+                    philosophy and values
+                  </strong>
+                  , which influence everything we do.
+                </p>
+                <Block />
+                <p>
+                  With{" "}
+                  <strong style={{ color: "white" }}>
+                    over a decade and a half
+                  </strong>
+                  's experience in the creative industry, we have{" "}
+                  <strong style={{ color: "white" }}>learned a lot</strong>{" "}
+                  about what it takes{" "}
+                  <strong style={{ color: "white" }}>
+                    {" "}
+                    to be successful in today's digital age:
+                  </strong>
+                </p>
+              </Container>
+            </Column>
+          </Column.Group>
+        </Container>
         <PhilosophyCards values={values} />
-      </Section>
-      <Section backgroundColor="success" textColor="light" textAlign="centered">
         <PhilosophyCards values={values2} />
         <p>
           Find out more about the services we offer{" "}
@@ -202,9 +203,9 @@ type Value = {
 function PhilosophyCards(props) {
   const { values } = props;
   return (
-    <Column.Group>
-      {map(value => (
-        <Column size={4}>
+    <Column.Group centered>
+      {values.map((value, index) => (
+        <Column size={3}>
           <Card>
             <Card.Content textAlign="centered">
               <Icon
@@ -223,7 +224,7 @@ function PhilosophyCards(props) {
             </Card.Content>
           </Card>
         </Column>
-      ))(values)}
+      ))}
     </Column.Group>
   );
 }
