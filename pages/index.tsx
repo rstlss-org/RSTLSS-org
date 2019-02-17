@@ -11,7 +11,8 @@ import {
   Box,
   Column,
   Image,
-  Block
+  Block,
+  Generic
 } from "rbx";
 
 import { map } from "rambda";
@@ -58,7 +59,7 @@ function About() {
       <Column.Group>
         <Column textAlign="centered" size={8} offset={2}>
           <Title>Hello!</Title>
-          <p>
+          <Generic as="p" textSize="5">
             We are{" "}
             <img
               src="/static/img/logo/full.png"
@@ -68,18 +69,18 @@ function About() {
             - an <strong>alliance</strong> of{" "}
             <strong>passionate creatives</strong>, based out of{" "}
             <strong>London</strong>.
-          </p>
+          </Generic>
           <Block />
-          <p>
+          <Generic as="p" textSize="5">
             We <strong>work together</strong> to forge{" "}
-            <strong>engaging media</strong>, <strong>bold brands</strong> and
+            <strong>engaging media</strong>, <strong>bold brands</strong> and{" "}
             <strong>magical user experiences</strong>.
-          </p>
+          </Generic>
           <Block />
-          <p>
+          <Generic as="p" textSize="5">
             We use <strong>collaboration</strong>, <strong>creativity</strong>,
             and <strong>the latest and greatest in digital innovation.</strong>
-          </p>
+          </Generic>
         </Column>
       </Column.Group>
     </Section>
@@ -96,7 +97,7 @@ function Philosophy() {
       ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faPencilRuler,
-      iconColor: "grey"
+      iconColor: "warning"
     },
     {
       title: "Local Talent",
@@ -117,7 +118,7 @@ function Philosophy() {
       ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faChartLine,
-      iconColor: "grey"
+      iconColor: "success"
     }
   ];
 
@@ -130,7 +131,7 @@ function Philosophy() {
       ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faUsers,
-      iconColor: "grey"
+      iconColor: "#ff0000"
     },
     {
       title: "'Magic'",
@@ -141,7 +142,7 @@ function Philosophy() {
       ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faMagic,
-      iconColor: "grey"
+      iconColor: "info"
     },
     {
       title: "Long Term Support",
@@ -151,7 +152,7 @@ function Philosophy() {
       ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faHandsHelping,
-      iconColor: "grey"
+      iconColor: "danger"
     }
   ];
 
@@ -217,7 +218,7 @@ function PhilosophyCards(props) {
     <Column.Group centered>
       {values.map((value, index) => (
         <Column size={3}>
-          <Card>
+          <Card style={{ height: "100%" }}>
             <Card.Content textAlign="centered">
               <Icon
                 textColor={value.iconColor}
