@@ -3,21 +3,38 @@ import { Icon, Content, Footer } from "rbx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import Flag from "react-world-flags";
-
+import Flag from "react-flags";
 const LayoutFooter = () => (
   <Footer>
     <Content textAlign="centered">
-      <p>
-        Made in <Flag code="uk" alt="the United Kingdom" />
-      </p>
       <p>
         Hand-crafted with{" "}
         <Icon color="danger">
           <FontAwesomeIcon icon={faHeart} />
         </Icon>{" "}
-        by <strong>RSTLSS</strong>, a <a href="mailto:">CLOAKROOM LIMITED</a>{" "}
-        group.
+        in the{" "}
+        <Icon>
+          <Flag
+            name="GB"
+            alt="the United Kingdom"
+            format="svg"
+            basePath="/static/img/flags"
+          />
+        </Icon>{" "}
+        United Kingdom by{" "}
+        <a href="mailto:rai@rbutera.com">
+          <img
+            alt="RSTLSS"
+            src="/static/img/logo/full.svg"
+            style={{
+              height: "20px",
+              verticalAlign: "baseline",
+              position: "relative",
+              top: "4px"
+            }}
+          />
+        </a>
+        , a <a href="mailto:rai@rbutera.com">CLOAKROOM LIMITED</a> group.
       </p>
       <p>
         The source code for this website is available under the{" "}
@@ -33,7 +50,7 @@ const LayoutFooter = () => (
         </Icon>{" "}
         GitHub
       </p>
-      <p>&copy; 2019</p>
+      <p>&copy; 2019 RSTLSS</p>
     </Content>
   </Footer>
 );

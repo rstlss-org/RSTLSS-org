@@ -25,11 +25,11 @@ const linkStyle = {
 // );
 
 const Header = () => (
-  <Navbar color="white">
+  <Navbar color="black">
     <Navbar.Brand>
       <Navbar.Item href="#">
         <img
-          src="./static/img/logo/black.png"
+          src="./static/img/logo/white.png"
           alt="RSTLSS"
           role="presentation"
         />
@@ -37,22 +37,44 @@ const Header = () => (
       <Navbar.Burger />
     </Navbar.Brand>
     <Navbar.Menu>
-      <Navbar.Segment align="start">
-        <Navbar.Item>Home</Navbar.Item>
-        <Navbar.Item>About</Navbar.Item>
-        <Navbar.Item>Skills & Services</Navbar.Item>
-        <Navbar.Item dropdown>
-          <Navbar.Link>Projects</Navbar.Link>
-          <Navbar.Dropdown>
-            <Navbar.Item>Our Work</Navbar.Item>
-            <Navbar.Divider />
-            <Navbar.Item>Cloakroom</Navbar.Item>
-            <Navbar.Item>Chan</Navbar.Item>
-          </Navbar.Dropdown>
-        </Navbar.Item>
-      </Navbar.Segment>
+      <Navbar.Segment align="start" />
 
       <Navbar.Segment align="end">
+        <Navbar.Item>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </Navbar.Item>
+        <Navbar.Item>
+          <Link href="/services">
+            <a>Skills & Services</a>
+          </Link>
+        </Navbar.Item>
+        <Navbar.Item dropdown>
+          <Navbar.Link>
+            <Link href="/projects">
+              <a>Projects</a>
+            </Link>
+          </Navbar.Link>
+          <Navbar.Dropdown>
+            <Navbar.Item>
+              <Link href="/projects">
+                <a>Our Work</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Divider />
+            <Navbar.Item>
+              <Link href="/showcases/cloakroom">
+                <a>Cloakroom</a>
+              </Link>
+            </Navbar.Item>
+            <Navbar.Item>
+              <Link href="/showcases/chan">
+                <a>Chan</a>
+              </Link>
+            </Navbar.Item>
+          </Navbar.Dropdown>
+        </Navbar.Item>
         <Navbar.Item>
           <Button.Group>
             <Button color="success">
