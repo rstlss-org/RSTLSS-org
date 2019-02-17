@@ -15,5 +15,12 @@
   },
   "devDependencies": {
     "typescript": "^3.3.3"
+  },
+  {
+    "scripts": {
+      "dev": "next",
+      "build": "next build",
+      "start": "next start"
+    }
   }
 }
