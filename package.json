@@ -1,6 +1,6 @@
 {
   "name": "rstlss-org",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The RSTLSS.org Website",
   "main": "index.js",
   "repository": "https://github.com/Raigasm/rstlss-org",
@@ -34,6 +34,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export"
   }
 }

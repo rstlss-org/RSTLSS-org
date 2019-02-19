@@ -201,14 +201,6 @@ function Philosophy() {
   );
 }
 
-type Value = {
-  title: string;
-  description: string;
-  icon: Element;
-  iconColor: string;
-  image?: string;
-};
-
 function PhilosophyCards(props) {
   const { values } = props;
   const descriptionStyle = {

@@ -13,7 +13,7 @@ const Header = () => (
       <Navbar.Item as="div" href="#">
         <Link href="/">
           <img
-            src="./static/img/logo/white.png"
+            src="/static/img/logo/white.png"
             alt="RSTLSS"
             role="presentation"
             style={{ cursor: "pointer" }}
