@@ -33,19 +33,14 @@ function Top() {
     <Hero gradient color="info" size="fullheight-with-navbar">
       <Hero.Body>
         <Container fluid>
-          <Title>We build magical user experiences</Title>
+          <Title>We are RSTLSS</Title>
           <Title as="h4" subtitle>
-            Interactive Websites and Desktop/Mobile Apps
+            Big man tings since 2k19 zoop zoop
           </Title>
           <p>
             We use our proactive ballpark figures to dynamically manage our
             vertical expectations. Our emerging market development lifecycle
             enables holistic, mission critical milestones.
-          </p>
-          <p>
-            Change the way you do business - adopt senior big datas. In the
-            synergy space, industry is strategically investing its company-wide
-            dot-bombs.
           </p>
         </Container>
       </Hero.Body>
@@ -62,7 +57,7 @@ function About() {
           <Generic as="p" textSize="5">
             We are{" "}
             <img
-              src="/static/img/logo/full.png"
+              src="/static/img/logo/v3/full-default.svg"
               alt="RSTLSS"
               style={{ height: "1.5em", position: "relative", top: "7px" }}
             />{" "}
@@ -158,32 +153,24 @@ function Philosophy() {
 
   return (
     <div>
-      <Section backgroundColor="dark" textColor="light" textAlign="centered">
+      <Section textAlign="centered">
         <Column.Group>
           <Column size={10} offset={1}>
-            <Title textColor="light">Philosophy & Values</Title>
+            <Title>Why Clients Choose RSTLSS</Title>
 
             <Block />
             <p>
-              At <strong style={{ color: "white" }}>RSTLSS</strong> we have a{" "}
-              <strong style={{ color: "white" }}>strong commitment</strong> to
-              our{" "}
-              <strong style={{ color: "white" }}>philosophy and values</strong>,
-              which influence everything we do.
+              At <strong>RSTLSS</strong> we have a{" "}
+              <strong>strong commitment</strong> to our{" "}
+              <strong>philosophy and values</strong>, which influence everything
+              we do.
             </p>
             <Block />
             <p>
-              With{" "}
-              <strong style={{ color: "white" }}>
-                over a decade and a half
-              </strong>
+              With <strong>over a decade and a half</strong>
               's experience in the creative industry, we have{" "}
-              <strong style={{ color: "white" }}>learned a lot</strong> about
-              what it takes{" "}
-              <strong style={{ color: "white" }}>
-                {" "}
-                to be successful in today's digital age:
-              </strong>
+              <strong>learned a lot</strong> about what it takes{" "}
+              <strong> to be successful in today's digital age:</strong>
             </p>
           </Column>
         </Column.Group>

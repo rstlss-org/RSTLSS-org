@@ -1,17 +1,17 @@
 import Link from "next/link";
-import { Icon, Content, Footer } from "rbx";
+import { Icon, Container, Footer } from "rbx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Flag from "react-flags";
 const LayoutFooter = () => (
-  <Footer>
-    <Content textAlign="centered">
+  <Footer backgroundColor="light" textColor="dark">
+    <Container textAlign="centered">
       <p>
         <a href="mailto:rai@rbutera.com">
           <img
             alt="RSTLSS"
-            src="/static/img/logo/full.svg"
+            src="/static/img/logo/v3/black.svg"
             style={{
               height: "20px",
               verticalAlign: "baseline",
@@ -43,13 +43,11 @@ const LayoutFooter = () => (
         <strong>United Kingdom</strong>
       </p>
 
-      <p>
-        <em>
-          "stay <strong>RSTLSS</strong>"
-        </em>
+      <p style={{ fontStyle: "italic" }}>
+        "stay <strong>RSTLSS</strong>"
       </p>
       <p>&copy; 2019</p>
-    </Content>
+    </Container>
   </Footer>
 );
 export default LayoutFooter;
