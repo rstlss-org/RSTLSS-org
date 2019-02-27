@@ -16,7 +16,6 @@ const herobg = (
     <figure />
     <figure />
     <figure />
-    <figure />
   </>
 );
 

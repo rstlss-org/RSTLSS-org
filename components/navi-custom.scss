@@ -3,14 +3,14 @@
     animation-timing-function: ease-in;
     opacity: 0;
   }
-  8% {
+  5% {
     animation-timing-function: ease-out;
     opacity: 1;
   }
-  17% {
+  10% {
     opacity: 1;
   }
-  25% {
+  20% {
     opacity: 0;
   }
   100% {
@@ -150,7 +150,7 @@ div#navi-root {
     // background-size: cover;
     // background-position: center;
     & > figure {
-      animation: imageAnimation 30s linear infinite 0s;
+      animation: imageAnimation 60s linear infinite 0s;
       backface-visibility: hidden;
       background-size: cover;
       background-position: center center;
@@ -201,10 +201,6 @@ div#navi-root {
     & > figure:nth-child(10) {
       animation-delay: 54s;
       background-image: url("/static/img/navi/bg10.jpg");
-    }
-    & > figure:nth-child(11) {
-      animation-delay: 60s;
-      background-image: url("/static/img/navi/bg11.jpg");
     }
     transition: opacity 0.5s ease-in-out;
   }
