@@ -306,10 +306,3 @@ div#navi-root {
     rgba(0, 0, 0, 0.2) 100%
   );
 }
-
-@for $i from 2 through 11 {
-  div#navi-root .navi-hero-background > figure:nth-child($i) {
-    animation-delay: ($i - 1) * 6s;
-    background-image: url("/static/img/navi/bg$i.jpg");
-  }
-}
