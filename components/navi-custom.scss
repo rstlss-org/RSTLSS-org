@@ -7,10 +7,10 @@
     animation-timing-function: ease-out;
     opacity: 1;
   }
-  10% {
+  15% {
     opacity: 1;
   }
-  20% {
+  25% {
     opacity: 0;
   }
   100% {
@@ -150,7 +150,7 @@ div#navi-root {
     // background-size: cover;
     // background-position: center;
     & > figure {
-      animation: imageAnimation 60s linear infinite 0s;
+      animation: imageAnimation 30s linear infinite 0s;
       backface-visibility: hidden;
       background-size: cover;
       background-position: center center;
