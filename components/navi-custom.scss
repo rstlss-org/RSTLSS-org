@@ -1,0 +1,308 @@
+@keyframes imageAnimation {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes herobg {
+  0% {
+    background-color: black;
+  }
+  15% {
+    background-color: #2364aa;
+  }
+  22% {
+    background-color: black;
+  }
+  30% {
+    background-color: #3da5d9;
+  }
+  37% {
+    background-color: black;
+  }
+  45% {
+    background-color: #73bfb8;
+  }
+  52% {
+    background-color: black;
+  }
+  60% {
+    background-color: #fec601;
+  }
+  67% {
+    background-color: black;
+  }
+  75% {
+    background-color: #ea7317;
+  }
+  82% {
+    background-color: black;
+  }
+  90% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@-moz-keyframes herobg /* Firefox */ {
+  0% {
+    background-color: black;
+  }
+  15% {
+    background-color: #2364aa;
+  }
+  22% {
+    background-color: black;
+  }
+  30% {
+    background-color: #3da5d9;
+  }
+  37% {
+    background-color: black;
+  }
+  45% {
+    background-color: #73bfb8;
+  }
+  52% {
+    background-color: black;
+  }
+  60% {
+    background-color: #fec601;
+  }
+  67% {
+    background-color: black;
+  }
+  75% {
+    background-color: #ea7317;
+  }
+  82% {
+    background-color: black;
+  }
+  90% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes herobg /* Safari and Chrome */ {
+  0% {
+    background-color: black;
+  }
+  15% {
+    background-color: #2364aa;
+  }
+  22% {
+    background-color: black;
+  }
+  30% {
+    background-color: #3da5d9;
+  }
+  37% {
+    background-color: black;
+  }
+  45% {
+    background-color: #73bfb8;
+  }
+  52% {
+    background-color: black;
+  }
+  60% {
+    background-color: #fec601;
+  }
+  67% {
+    background-color: black;
+  }
+  75% {
+    background-color: #ea7317;
+  }
+  82% {
+    background-color: black;
+  }
+  90% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+div#navi-root {
+  .navi-hero-background {
+    // background-image: url("https://source.unsplash.com/random");
+    // background-size: cover;
+    // background-position: center;
+    & > figure {
+      animation: imageAnimation 30s linear infinite 0s;
+      backface-visibility: hidden;
+      background-size: cover;
+      background-position: center center;
+      color: transparent;
+      height: 100%;
+      left: 0px;
+      opacity: 0;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      // z-index: 0;
+    }
+    & > figure:nth-child(1) {
+      background-image: url("/static/img/navi/bg1.jpg");
+    }
+    & > figure:nth-child(2) {
+      animation-delay: 6s;
+      background-image: url("/static/img/navi/bg2.jpg");
+    }
+    & > figure:nth-child(3) {
+      animation-delay: 12s;
+      background-image: url("/static/img/navi/bg3.jpg");
+    }
+    & > figure:nth-child(4) {
+      animation-delay: 18s;
+      background-image: url("/static/img/navi/bg4.jpg");
+    }
+    & > figure:nth-child(5) {
+      animation-delay: 24s;
+      background-image: url("/static/img/navi/bg5.jpg");
+    }
+    & > figure:nth-child(6) {
+      animation-delay: 30s;
+      background-image: url("/static/img/navi/bg6.jpg");
+    }
+    & > figure:nth-child(7) {
+      animation-delay: 36s;
+      background-image: url("/static/img/navi/bg7.jpg");
+    }
+    & > figure:nth-child(8) {
+      animation-delay: 42s;
+      background-image: url("/static/img/navi/bg8.jpg");
+    }
+    & > figure:nth-child(9) {
+      animation-delay: 48s;
+      background-image: url("/static/img/navi/bg9.jpg");
+    }
+    & > figure:nth-child(10) {
+      animation-delay: 54s;
+      background-image: url("/static/img/navi/bg10.jpg");
+    }
+    & > figure:nth-child(11) {
+      animation-delay: 60s;
+      background-image: url("/static/img/navi/bg11.jpg");
+    }
+    transition: opacity 0.5s ease-in-out;
+  }
+  nav.navbar {
+    background-color: rgba(0, 0, 0, 1);
+    transition: background 0s ease-in-out;
+  }
+  &.navi.navi-expanded {
+    nav.navbar {
+      background-color: rgba(0, 0, 0, 0);
+      transition: background 0.5s ease-in-out;
+    }
+    .navi-hero {
+      // background-color: red;
+    }
+  }
+
+  &.navi.navi-collapsed .navi-hero {
+    pointer-events: none;
+    // background: none;
+    animation: none;
+    .navi-logo {
+      width: 100%;
+      display: block;
+      height: 52px;
+      padding-top: 2px;
+      img {
+        pointer-events: auto;
+        max-height: 36px;
+        transition: all 0.5s ease-in-out;
+        width: 100px;
+        // filter: invert(100);
+      }
+    }
+  }
+
+  .navi-logo {
+    &.collapsed {
+      height: 50px;
+      width: 85px;
+      padding-top: 0px;
+      margin-top: 10px;
+    }
+
+    padding-top: 40vh;
+    transition: all 0.2s ease-in-out;
+    transition: padding 0.5s ease-in-out;
+
+    &.scrolling img {
+    }
+  }
+
+  .navi-logo img {
+    transition: all 1s ease-in-out;
+    transition: filter 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    // padding: 6px;
+    height: auto;
+    width: 30vw;
+    .collapsed &,
+    .navi-collapsed & {
+      transition: width 0.3s ease-in-out;
+      transition: height 0.3s ease-in-out;
+    }
+  }
+}
+
+// .navi-hero-overlay {
+//   background: rgb(2, 0, 36);
+//   background: linear-gradient(
+//     180deg,
+//     rgba(0, 0, 0, 1) 0%,
+//     rgba(0, 0, 0, 1) 5%,
+//     rgba(0, 0, 0, 0) 35%,
+//     rgba(0, 0, 0, 0) 100%
+//   );
+// }
+.navi-hero-overlay {
+  background: rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.75) 6%,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0) 95%,
+    rgba(0, 0, 0, 0.1) 97%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+@for $i from 2 through 11 {
+  div#navi-root .navi-hero-background > figure:nth-child($i) {
+    animation-delay: ($i - 1) * 6s;
+    background-image: url("/static/img/navi/bg$i.jpg");
+  }
+}

@@ -30,7 +30,7 @@ import Link from "next/link";
 
 function Top() {
   return (
-    <Hero gradient color="info" size="fullheight-with-navbar">
+    <Hero gradient color="info" size="medium">
       <Hero.Body>
         <Container fluid>
           <Title>We are RSTLSS</Title>

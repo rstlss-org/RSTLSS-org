@@ -22,17 +22,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "./n
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/map.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/map.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/map */ "./node_modules/core-js/library/fn/map.js");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
@@ -963,25 +952,6 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 __webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
 __webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
 module.exports = __webpack_require__(/*! ../modules/core.get-iterator */ "./node_modules/core-js/library/modules/core.get-iterator.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/map.js":
-/*!************************************************!*\
-  !*** ./node_modules/core-js/library/fn/map.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../modules/es6.object.to-string */ "./node_modules/core-js/library/modules/es6.object.to-string.js");
-__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
-__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
-__webpack_require__(/*! ../modules/es6.map */ "./node_modules/core-js/library/modules/es6.map.js");
-__webpack_require__(/*! ../modules/es7.map.to-json */ "./node_modules/core-js/library/modules/es7.map.to-json.js");
-__webpack_require__(/*! ../modules/es7.map.of */ "./node_modules/core-js/library/modules/es7.map.of.js");
-__webpack_require__(/*! ../modules/es7.map.from */ "./node_modules/core-js/library/modules/es7.map.from.js");
-module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Map;
 
 
 /***/ }),
@@ -3562,37 +3532,6 @@ addToUnscopables('entries');
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/es6.map.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.map.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var strong = __webpack_require__(/*! ./_collection-strong */ "./node_modules/core-js/library/modules/_collection-strong.js");
-var validate = __webpack_require__(/*! ./_validate-collection */ "./node_modules/core-js/library/modules/_validate-collection.js");
-var MAP = 'Map';
-
-// 23.1 Map Objects
-module.exports = __webpack_require__(/*! ./_collection */ "./node_modules/core-js/library/modules/_collection.js")(MAP, function (get) {
-  return function Map() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
-}, {
-  // 23.1.3.6 Map.prototype.get(key)
-  get: function get(key) {
-    var entry = strong.getEntry(validate(this, MAP), key);
-    return entry && entry.v;
-  },
-  // 23.1.3.9 Map.prototype.set(key, value)
-  set: function set(key, value) {
-    return strong.def(validate(this, MAP), key === 0 ? 0 : key, value);
-  }
-}, strong, true);
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/es6.object.assign.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.assign.js ***!
@@ -4354,47 +4293,6 @@ setToStringTag($Symbol, 'Symbol');
 setToStringTag(Math, 'Math', true);
 // 24.3.3 JSON[@@toStringTag]
 setToStringTag(global.JSON, 'JSON', true);
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.map.from.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es7.map.from.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://tc39.github.io/proposal-setmap-offrom/#sec-map.from
-__webpack_require__(/*! ./_set-collection-from */ "./node_modules/core-js/library/modules/_set-collection-from.js")('Map');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.map.of.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es7.map.of.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://tc39.github.io/proposal-setmap-offrom/#sec-map.of
-__webpack_require__(/*! ./_set-collection-of */ "./node_modules/core-js/library/modules/_set-collection-of.js")('Map');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.map.to-json.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es7.map.to-json.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-
-$export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_collection-to-json */ "./node_modules/core-js/library/modules/_collection-to-json.js")('Map') });
 
 
 /***/ }),
@@ -5426,8 +5324,6 @@ var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-cor
 
 var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js"));
 
-var _map = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/map */ "./node_modules/@babel/runtime-corejs2/core-js/map.js"));
-
 var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
     "default": mod
@@ -5443,7 +5339,7 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 var prop_types_1 = __importDefault(__webpack_require__(/*! prop-types */ "./node_modules/next-server/node_modules/prop-types/index.js"));
 
 var ALL_INITIALIZERS = [];
-var READY_INITIALIZERS = new _map.default();
+var READY_INITIALIZERS = [];
 var initialized = false;
 
 function load(loader) {
@@ -5543,31 +5439,34 @@ function createLoadableComponent(loadFn, options) {
 
   if (!initialized && typeof window !== 'undefined' && typeof opts.webpack === 'function') {
     var moduleIds = opts.webpack();
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
+    READY_INITIALIZERS.push(function (ids) {
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
 
-    try {
-      for (var _iterator = (0, _getIterator2.default)(moduleIds), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var moduleId = _step.value;
-        READY_INITIALIZERS.set(moduleId, function () {
-          return init();
-        });
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
       try {
-        if (!_iteratorNormalCompletion && _iterator.return != null) {
-          _iterator.return();
+        for (var _iterator = (0, _getIterator2.default)(moduleIds), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var moduleId = _step.value;
+
+          if (ids.indexOf(moduleId) !== -1) {
+            return init();
+          }
         }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
       } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return != null) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
         }
       }
-    }
+    });
   }
 
   return _a =
@@ -5727,17 +5626,17 @@ function LoadableMap(opts) {
 
 Loadable.Map = LoadableMap;
 
-function flushInitializers(initializers) {
+function flushInitializers(initializers, ids) {
   var promises = [];
 
   while (initializers.length) {
     var init = initializers.pop();
-    promises.push(init());
+    promises.push(init(ids));
   }
 
   return _promise.default.all(promises).then(function () {
     if (initializers.length) {
-      return flushInitializers(initializers);
+      return flushInitializers(initializers, ids);
     }
   });
 }
@@ -5748,23 +5647,15 @@ Loadable.preloadAll = function () {
   });
 };
 
-Loadable.preloadReady = function (webpackIds) {
-  return new _promise.default(function (resolve, reject) {
-    var initializers = webpackIds.reduce(function (allInitalizers, moduleId) {
-      var initializer = READY_INITIALIZERS.get(moduleId);
+Loadable.preloadReady = function (ids) {
+  return new _promise.default(function (resolve) {
+    var res = function res() {
+      initialized = true;
+      return resolve();
+    }; // We always will resolve, errors should be handled within loading UIs.
 
-      if (!initializer) {
-        return allInitalizers;
-      }
 
-      allInitalizers.push(initializer);
-      return allInitalizers;
-    }, []);
-    initialized = true; // Make sure the object is cleared
-
-    READY_INITIALIZERS.clear(); // We always will resolve, errors should be handled within loading UIs.
-
-    flushInitializers(initializers).then(resolve, resolve);
+    flushInitializers(READY_INITIALIZERS, ids).then(res, res);
   });
 };
 
@@ -5905,7 +5796,7 @@ function () {
         var _pathname = _this.pathname,
             _query = _this.query;
 
-        _this.changeState('replaceState', url_1.format({
+        _this.changeState('replaceState', utils_1.formatWithValidation({
           pathname: _pathname,
           query: _query
         }), utils_1.getURL());
@@ -5968,7 +5859,7 @@ function () {
     if (typeof window !== 'undefined') {
       // in order for `e.state` to work on the `onpopstate` event
       // we have to register the initial route upon initialization
-      this.changeState('replaceState', url_1.format({
+      this.changeState('replaceState', utils_1.formatWithValidation({
         pathname: pathname,
         query: query
       }), as);
@@ -6101,8 +5992,8 @@ function () {
               case 0:
                 // If url and as provided as an object representation,
                 // we'll format them into the string version here.
-                url = (0, _typeof2.default)(_url) === 'object' ? url_1.format(_url) : _url;
-                as = (0, _typeof2.default)(_as) === 'object' ? url_1.format(_as) : _as; // Add the ending slash to the paths. So, we can serve the
+                url = (0, _typeof2.default)(_url) === 'object' ? utils_1.formatWithValidation(_url) : _url;
+                as = (0, _typeof2.default)(_as) === 'object' ? utils_1.formatWithValidation(_as) : _as; // Add the ending slash to the paths. So, we can serve the
                 // "<page>/index.html" directly for the SSR page.
 
                 if (__NEXT_DATA__.nextExport) {
@@ -6778,11 +6669,17 @@ var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/help
 
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js"));
 
+var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js"));
+
+var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/typeof */ "./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js"));
+
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js"));
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var url_1 = __webpack_require__(/*! url */ "./node_modules/url/url.js");
 
 function execOnce(fn) {
   var _this = this;
@@ -6900,12 +6797,29 @@ function _loadGetInitialProps() {
             return _context.stop();
         }
       }
-    }, _callee, this);
+    }, _callee);
   }));
   return _loadGetInitialProps.apply(this, arguments);
 }
 
 exports.loadGetInitialProps = loadGetInitialProps;
+exports.urlObjectKeys = ['auth', 'hash', 'host', 'hostname', 'href', 'path', 'pathname', 'port', 'protocol', 'query', 'search', 'slashes'];
+
+function formatWithValidation(url, options) {
+  if (true) {
+    if (url !== null && (0, _typeof2.default)(url) === 'object') {
+      (0, _keys.default)(url).forEach(function (key) {
+        if (!exports.urlObjectKeys.includes(key)) {
+          console.warn("Unknown key passed via urlObject into url.format: ".concat(key));
+        }
+      });
+    }
+  }
+
+  return url_1.format(url, options);
+}
+
+exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
@@ -7730,7 +7644,7 @@ exports.getEventSourceWrapper = getEventSourceWrapper;
 /**
 MIT License
 
-Copyright (c) 2013-present, Facebook, Inc.
+Copyright (c) 2015-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -7750,11 +7664,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-// This file is based on https://github.com/facebook/create-react-app/blob/v1.1.4/packages/react-dev-utils/formatWebpackMessages.js
-// It's been edited to remove chalk
- // Some custom utilities to prettify Webpack output.
-// This is quite hacky and hopefully won't be needed when Webpack fixes this.
-// https://github.com/webpack/webpack/issues/2878
+// This file is based on https://github.com/facebook/create-react-app/blob/7b1a32be6ec9f99a6c9a3c66813f3ac09c4736b9/packages/react-dev-utils/formatWebpackMessages.js
+// It's been edited to remove chalk and CRA-specific logic
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js"));
 
 var friendlySyntaxErrorLabel = 'Syntax error:';
 
@@ -7765,79 +7681,67 @@ function isLikelyASyntaxError(message) {
 
 
 function formatMessage(message, isError) {
-  var lines = message.split('\n');
-
-  if (lines.length > 2 && lines[1] === '') {
-    // Remove extra newline.
-    lines.splice(1, 1);
-  } // Remove webpack-specific loader notation from filename.
-  // Before:
-  // ./~/css-loader!./~/postcss-loader!./src/App.css
-  // After:
-  // ./src/App.css
-
-
-  if (lines[0].lastIndexOf('!') !== -1) {
-    lines[0] = lines[0].substr(lines[0].lastIndexOf('!') + 1);
-  } // Remove unnecessary stack added by `thread-loader`
-
-
-  var threadLoaderIndex = -1;
-  lines.forEach(function (line, index) {
-    if (threadLoaderIndex !== -1) {
-      return;
-    }
-
-    if (/thread.loader/i.test(line)) {
-      threadLoaderIndex = index;
-    }
-  });
-
-  if (threadLoaderIndex !== -1) {
-    lines = lines.slice(0, threadLoaderIndex);
-  }
+  var lines = message.split('\n'); // Strip Webpack-added headers off errors/warnings
+  // https://github.com/webpack/webpack/blob/master/lib/ModuleError.js
 
   lines = lines.filter(function (line) {
-    // Webpack adds a list of entry points to warning messages:
-    //  @ ./src/index.js
-    //  @ multi react-scripts/~/react-dev-utils/webpackHotDevClient.js ...
-    // It is misleading (and unrelated to the warnings) so we clean it up.
-    // It is only useful for syntax errors but we have beautiful frames for them.
-    return line.indexOf(' @ ') !== 0;
-  }); // line #0 is filename
-  // line #1 is the main error message
+    return !/Module [A-z ]+\(from/.test(line);
+  }); // Transform parsing error into syntax error
+  // TODO: move this to our ESLint formatter?
 
-  if (!lines[0] || !lines[1]) {
-    return lines.join('\n');
-  } // Cleans up verbose "module not found" messages for files and packages.
+  lines = lines.map(function (line) {
+    var parsingError = /Line (\d+):(?:(\d+):)?\s*Parsing error: (.+)$/.exec(line);
+
+    if (!parsingError) {
+      return line;
+    }
+
+    var _parsingError = (0, _slicedToArray2.default)(parsingError, 4),
+        errorLine = _parsingError[1],
+        errorColumn = _parsingError[2],
+        errorMessage = _parsingError[3];
+
+    return "".concat(friendlySyntaxErrorLabel, " ").concat(errorMessage, " (").concat(errorLine, ":").concat(errorColumn, ")");
+  });
+  message = lines.join('\n'); // Smoosh syntax errors (commonly found in CSS)
+
+  message = message.replace(/SyntaxError\s+\((\d+):(\d+)\)\s*(.+?)\n/g, "".concat(friendlySyntaxErrorLabel, " $3 ($1:$2)\n")); // Remove columns from ESLint formatter output (we added these for more
+  // accurate syntax errors)
+
+  message = message.replace(/Line (\d+):\d+:/g, 'Line $1:'); // Clean up export errors
+
+  message = message.replace(/^.*export '(.+?)' was not found in '(.+?)'.*$/gm, "Attempted import error: '$1' is not exported from '$2'.");
+  message = message.replace(/^.*export 'default' \(imported as '(.+?)'\) was not found in '(.+?)'.*$/gm, "Attempted import error: '$2' does not contain a default export (imported as '$1').");
+  message = message.replace(/^.*export '(.+?)' \(imported as '(.+?)'\) was not found in '(.+?)'.*$/gm, "Attempted import error: '$1' is not exported from '$3' (imported as '$2').");
+  lines = message.split('\n'); // Remove leading newline
+
+  if (lines.length > 2 && lines[1].trim() === '') {
+    lines.splice(1, 1);
+  } // Clean up file name
 
 
-  if (lines[1].indexOf('Module not found: ') === 0) {
-    lines = [lines[0], // Clean up message because "Module not found: " is descriptive enough.
-    lines[1].replace("Cannot resolve 'file' or 'directory' ", '').replace('Cannot resolve module ', '').replace('Error: ', '').replace('[CaseSensitivePathsPlugin] ', '')];
-  } // Cleans up syntax error messages.
+  lines[0] = lines[0].replace(/^(.*) \d+:\d+-\d+$/, '$1'); // Cleans up verbose "module not found" messages for files and packages.
 
-
-  if (lines[1].indexOf('Module build failed: ') === 0) {
-    lines[1] = lines[1].replace('Module build failed: SyntaxError:', friendlySyntaxErrorLabel);
-  } // Clean up export errors.
-  // TODO: we should really send a PR to Webpack for this.
-
-
-  var exportError = /\s*(.+?)\s*(")?export '(.+?)' was not found in '(.+?)'/;
-
-  if (lines[1].match(exportError)) {
-    lines[1] = lines[1].replace(exportError, "$1 '$4' does not contain an export named '$3'.");
-  } // Reassemble the message.
-
+  if (lines[1] && lines[1].indexOf('Module not found: ') === 0) {
+    lines = [lines[0], lines[1].replace('Error: ', '').replace('Module not found: Cannot find file:', 'Cannot find file:')];
+  }
 
   message = lines.join('\n'); // Internal stacks are generally useless so we strip them... with the
   // exception of stacks containing `webpack:` because they're normally
-  // from user code generated by WebPack. For more information see
+  // from user code generated by Webpack. For more information see
   // https://github.com/facebook/create-react-app/pull/1050
 
   message = message.replace(/^\s*at\s((?!webpack:).)*:\d+:\d+[\s)]*(\n|$)/gm, ''); // at ... ...:x:y
 
+  message = message.replace(/^\s*at\s<anonymous>(\n|$)/gm, ''); // at <anonymous>
+
+  lines = message.split('\n'); // Remove duplicated newlines
+
+  lines = lines.filter(function (line, index, arr) {
+    return index === 0 || line.trim() !== '' || line.trim() !== arr[index - 1].trim();
+  }); // Reassemble the message
+
+  message = lines.join('\n');
   return message.trim();
 }
 
@@ -7855,8 +7759,6 @@ function formatWebpackMessages(json) {
 
   if (result.errors.some(isLikelyASyntaxError)) {
     // If there are any syntax errors, show just them.
-    // This prevents a confusing ESLint parsing error
-    // preceding a much more useful Babel syntax error.
     result.errors = result.errors.filter(isLikelyASyntaxError);
   }
 
@@ -8979,13 +8881,11 @@ _1.default({
 
 "use strict";
 
-/* global location, WebSocket */
+/* global window, location */
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js"));
-
-var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js"));
 
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/asyncToGenerator.js"));
 
@@ -9003,236 +8903,77 @@ var router_1 = __importDefault(__webpack_require__(/*! next/router */ "./node_mo
 
 var unfetch_1 = __importDefault(__webpack_require__(/*! unfetch */ "./node_modules/unfetch/dist/unfetch.es.js"));
 
-var _location = location,
-    hostname = _location.hostname,
-    protocol = _location.protocol;
-var wsProtocol = protocol.includes('https') ? 'wss' : 'ws';
-var retryTime = 5000;
-var ws = null;
-var lastHref = null;
+var evtSource;
+var currentPage;
+var retryTimeout;
+var retryWait = 5000;
 
 exports.default =
 /*#__PURE__*/
 function () {
   var _ref2 = (0, _asyncToGenerator2.default)(
   /*#__PURE__*/
-  _regenerator.default.mark(function _callee6(_ref) {
-    var assetPrefix, setup, ping, _ping, pingerTimeout, runPinger, _runPinger;
-
-    return _regenerator.default.wrap(function _callee6$(_context6) {
+  _regenerator.default.mark(function _callee(_ref) {
+    var assetPrefix, setupPing;
+    return _regenerator.default.wrap(function _callee$(_context) {
       while (1) {
-        switch (_context6.prev = _context6.next) {
+        switch (_context.prev = _context.next) {
           case 0:
-            _runPinger = function _ref10() {
-              _runPinger = (0, _asyncToGenerator2.default)(
-              /*#__PURE__*/
-              _regenerator.default.mark(function _callee5() {
-                return _regenerator.default.wrap(function _callee5$(_context5) {
-                  while (1) {
-                    switch (_context5.prev = _context5.next) {
-                      case 0:
-                        if (document.hidden) {
-                          _context5.next = 7;
-                          break;
-                        }
+            setupPing = function _ref3(retry) {
+              // Make sure to only create new EventSource request if page has changed
+              if (router_1.default.pathname === currentPage && !retry) return; // close current EventSource connection
 
-                        _context5.next = 3;
-                        return ping();
+              if (evtSource) {
+                evtSource.close();
+              }
 
-                      case 3:
-                        _context5.next = 5;
-                        return new _promise.default(function (resolve) {
-                          pingerTimeout = setTimeout(resolve, 5000);
-                        });
+              currentPage = router_1.default.pathname;
+              var url = "".concat(assetPrefix, "/_next/on-demand-entries-ping?page=").concat(currentPage);
+              evtSource = new window.EventSource(url);
 
-                      case 5:
-                        _context5.next = 0;
-                        break;
+              evtSource.onerror = function () {
+                retryTimeout = setTimeout(function () {
+                  return setupPing(true);
+                }, retryWait);
+              };
 
-                      case 7:
-                      case "end":
-                        return _context5.stop();
-                    }
+              evtSource.onopen = function () {
+                clearTimeout(retryTimeout);
+              };
+
+              evtSource.onmessage = function (event) {
+                try {
+                  var payload = JSON.parse(event.data);
+
+                  if (payload.invalid) {
+                    // Payload can be invalid even if the page does not exist.
+                    // So, we need to make sure it exists before reloading.
+                    unfetch_1.default(location.href, {
+                      credentials: 'same-origin'
+                    }).then(function (pageRes) {
+                      if (pageRes.status === 200) {
+                        location.reload();
+                      }
+                    });
                   }
-                }, _callee5, this);
-              }));
-              return _runPinger.apply(this, arguments);
-            };
-
-            runPinger = function _ref9() {
-              return _runPinger.apply(this, arguments);
-            };
-
-            _ping = function _ref8() {
-              _ping = (0, _asyncToGenerator2.default)(
-              /*#__PURE__*/
-              _regenerator.default.mark(function _callee4() {
-                return _regenerator.default.wrap(function _callee4$(_context4) {
-                  while (1) {
-                    switch (_context4.prev = _context4.next) {
-                      case 0:
-                        if (ws.readyState === ws.OPEN) {
-                          ws.send(router_1.default.pathname);
-                        }
-
-                      case 1:
-                      case "end":
-                        return _context4.stop();
-                    }
-                  }
-                }, _callee4, this);
-              }));
-              return _ping.apply(this, arguments);
-            };
-
-            ping = function _ref7() {
-              return _ping.apply(this, arguments);
+                } catch (err) {
+                  console.error('on-demand-entries failed to parse response', err);
+                }
+              };
             };
 
             assetPrefix = _ref.assetPrefix;
             router_1.default.ready(function () {
-              router_1.default.events.on('routeChangeComplete', ping);
+              router_1.default.events.on('routeChangeComplete', setupPing);
             });
+            setupPing(currentPage);
 
-            setup =
-            /*#__PURE__*/
-            function () {
-              var _ref3 = (0, _asyncToGenerator2.default)(
-              /*#__PURE__*/
-              _regenerator.default.mark(function _callee3(reconnect) {
-                return _regenerator.default.wrap(function _callee3$(_context3) {
-                  while (1) {
-                    switch (_context3.prev = _context3.next) {
-                      case 0:
-                        if (!(ws && ws.readyState === ws.OPEN)) {
-                          _context3.next = 2;
-                          break;
-                        }
-
-                        return _context3.abrupt("return", _promise.default.resolve());
-
-                      case 2:
-                        return _context3.abrupt("return", new _promise.default(function (resolve) {
-                          ws = new WebSocket("".concat(wsProtocol, "://").concat(hostname, ":").concat(50189).concat("/"));
-
-                          ws.onopen = function () {
-                            return resolve();
-                          };
-
-                          ws.onclose = function () {
-                            setTimeout(
-                            /*#__PURE__*/
-                            (0, _asyncToGenerator2.default)(
-                            /*#__PURE__*/
-                            _regenerator.default.mark(function _callee() {
-                              return _regenerator.default.wrap(function _callee$(_context) {
-                                while (1) {
-                                  switch (_context.prev = _context.next) {
-                                    case 0:
-                                      _context.next = 2;
-                                      return unfetch_1.default("".concat(assetPrefix, "/_next/on-demand-entries-ping")).then(function (res) {
-                                        return res.status === 200 && location.reload();
-                                      }).catch(function () {});
-
-                                    case 2:
-                                      _context.next = 4;
-                                      return setup(true);
-
-                                    case 4:
-                                      resolve();
-
-                                    case 5:
-                                    case "end":
-                                      return _context.stop();
-                                  }
-                                }
-                              }, _callee, this);
-                            })), retryTime);
-                          };
-
-                          ws.onmessage =
-                          /*#__PURE__*/
-                          function () {
-                            var _ref6 = (0, _asyncToGenerator2.default)(
-                            /*#__PURE__*/
-                            _regenerator.default.mark(function _callee2(_ref5) {
-                              var data, payload, pageRes;
-                              return _regenerator.default.wrap(function _callee2$(_context2) {
-                                while (1) {
-                                  switch (_context2.prev = _context2.next) {
-                                    case 0:
-                                      data = _ref5.data;
-                                      payload = JSON.parse(data);
-
-                                      if (!(payload.invalid && lastHref !== location.href)) {
-                                        _context2.next = 7;
-                                        break;
-                                      }
-
-                                      _context2.next = 5;
-                                      return unfetch_1.default(location.href, {
-                                        credentials: 'omit'
-                                      });
-
-                                    case 5:
-                                      pageRes = _context2.sent;
-
-                                      if (pageRes.status === 200) {
-                                        location.reload();
-                                      } else {
-                                        lastHref = location.href;
-                                      }
-
-                                    case 7:
-                                    case "end":
-                                      return _context2.stop();
-                                  }
-                                }
-                              }, _callee2, this);
-                            }));
-
-                            return function (_x3) {
-                              return _ref6.apply(this, arguments);
-                            };
-                          }();
-                        }));
-
-                      case 3:
-                      case "end":
-                        return _context3.stop();
-                    }
-                  }
-                }, _callee3, this);
-              }));
-
-              return function setup(_x2) {
-                return _ref3.apply(this, arguments);
-              };
-            }();
-
-            _context6.next = 9;
-            return setup();
-
-          case 9:
-            document.addEventListener('visibilitychange', function () {
-              if (!document.hidden) {
-                runPinger();
-              } else {
-                clearTimeout(pingerTimeout);
-              }
-            }, false);
-            setTimeout(function () {
-              runPinger().catch(function (err) {
-                console.error(err);
-              });
-            }, 10000);
-
-          case 11:
+          case 4:
           case "end":
-            return _context6.stop();
+            return _context.stop();
         }
       }
-    }, _callee6, this);
+    }, _callee, this);
   }));
 
   return function (_x) {
@@ -9525,9 +9266,11 @@ function () {
         }, _callee, this);
       }));
 
-      return function prefetch(_x) {
+      function prefetch(_x) {
         return _prefetch.apply(this, arguments);
-      };
+      }
+
+      return prefetch;
     }()
   }, {
     key: "clearCache",
@@ -10894,12 +10637,12 @@ module.exports = __webpack_require__(/*! ./dist/client/router */ "./node_modules
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_2370c685c413e603cdc0 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_d346b9d5e7f8e3f71f40 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2370c685c413e603cdc0 */ "dll-reference dll_2370c685c413e603cdc0"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_d346b9d5e7f8e3f71f40 */ "dll-reference dll_d346b9d5e7f8e3f71f40"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -11645,12 +11388,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_2370c685c413e603cdc0 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_d346b9d5e7f8e3f71f40 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2370c685c413e603cdc0 */ "dll-reference dll_2370c685c413e603cdc0"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_d346b9d5e7f8e3f71f40 */ "dll-reference dll_d346b9d5e7f8e3f71f40"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -17401,7 +17144,7 @@ module.exports = "!function(e){function t(n){if(u[n])return u[n].exports;var r=u
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.8.2
+/** @license React v16.8.3
  * react-is.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -17651,12 +17394,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_2370c685c413e603cdc0 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_d346b9d5e7f8e3f71f40 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2370c685c413e603cdc0 */ "dll-reference dll_2370c685c413e603cdc0"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_d346b9d5e7f8e3f71f40 */ "dll-reference dll_d346b9d5e7f8e3f71f40"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -19301,12 +19044,12 @@ module.exports = {
 
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!******************************************************************************************************!*\
-  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_2370c685c413e603cdc0 ***!
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_d346b9d5e7f8e3f71f40 ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2370c685c413e603cdc0 */ "dll-reference dll_2370c685c413e603cdc0"))("./node_modules/webpack/buildin/global.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_d346b9d5e7f8e3f71f40 */ "dll-reference dll_d346b9d5e7f8e3f71f40"))("./node_modules/webpack/buildin/global.js");
 
 /***/ }),
 
@@ -19355,14 +19098,14 @@ module.exports = __webpack_require__(/*! /Volumes/bigmanting/dev/rstlss/rstlss-o
 
 /***/ }),
 
-/***/ "dll-reference dll_2370c685c413e603cdc0":
+/***/ "dll-reference dll_d346b9d5e7f8e3f71f40":
 /*!*******************************************!*\
-  !*** external "dll_2370c685c413e603cdc0" ***!
+  !*** external "dll_d346b9d5e7f8e3f71f40" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_2370c685c413e603cdc0;
+module.exports = dll_d346b9d5e7f8e3f71f40;
 
 /***/ })
 
