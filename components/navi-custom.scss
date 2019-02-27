@@ -161,44 +161,55 @@ div#navi-root {
       position: absolute;
       top: 0px;
       width: 100%;
-      // z-index: 0;
+      z-index: 0;
     }
     & > figure:nth-child(1) {
+      // z-index: 1;
+      animation-delay: 0s;
       background-image: url("/static/img/navi/bg1.jpg");
     }
     & > figure:nth-child(2) {
+      // z-index: 2;
       animation-delay: 6s;
       background-image: url("/static/img/navi/bg2.jpg");
     }
     & > figure:nth-child(3) {
+      // z-index: 3;
       animation-delay: 12s;
       background-image: url("/static/img/navi/bg3.jpg");
     }
     & > figure:nth-child(4) {
+      // z-index: 4;
       animation-delay: 18s;
       background-image: url("/static/img/navi/bg4.jpg");
     }
     & > figure:nth-child(5) {
+      // z-index: 5;
       animation-delay: 24s;
       background-image: url("/static/img/navi/bg5.jpg");
     }
     & > figure:nth-child(6) {
+      // z-index: 6;
       animation-delay: 30s;
       background-image: url("/static/img/navi/bg6.jpg");
     }
     & > figure:nth-child(7) {
+      // z-index: 7;
       animation-delay: 36s;
       background-image: url("/static/img/navi/bg7.jpg");
     }
     & > figure:nth-child(8) {
+      // z-index: 8;
       animation-delay: 42s;
       background-image: url("/static/img/navi/bg8.jpg");
     }
     & > figure:nth-child(9) {
+      // z-index: 9;
       animation-delay: 48s;
       background-image: url("/static/img/navi/bg9.jpg");
     }
     & > figure:nth-child(10) {
+      // z-index: 1;
       animation-delay: 54s;
       background-image: url("/static/img/navi/bg10.jpg");
     }
