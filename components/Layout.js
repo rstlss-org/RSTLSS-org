@@ -4,16 +4,17 @@ import Header from "./Header";
 import LayoutFooter from "./Footer";
 import { Navi } from "@rstlss/navi";
 import Head from "next/head";
+import HeroBackground from "./HeroBackground";
 
-const herobg = (
-  <>
-    <figure />
-    <figure />
-    <figure />
-    <figure />
-    <figure />
-  </>
-);
+const backgrounds = [
+  "/static/img/navi/bg1.svg",
+  "/static/img/navi/bg2.svg",
+  "/static/img/navi/bg3.svg",
+  "/static/img/navi/bg4.svg",
+  "/static/img/navi/bg5.svg"
+];
+
+const herobg = <HeroBackground src={backgrounds} duration={10000} />;
 
 const Layout = props => (
   <>

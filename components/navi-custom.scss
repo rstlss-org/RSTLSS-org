@@ -150,45 +150,33 @@ div#navi-root {
     // background-size: cover;
     // background-position: center;
     & > figure {
-      animation: imageAnimation 30s linear infinite 0s;
       backface-visibility: hidden;
       background-size: cover;
       background-position: center center;
       color: transparent;
       height: 100%;
       left: 0px;
-      opacity: 0;
+      opacity: 1;
       position: absolute;
       top: 0px;
       width: 100%;
+      transition: opacity 1s ease-in-out;
       // z-index: 0;
+      &.hidden {
+        .navi-collapsed & {
+          transition: opacity 0s;
+        }
+        transition: opacity 0.5s ease-in-out;
+        opacity: 0;
+      }
+      &.current {
+        .navi-collapsed & {
+          transition: opacity 0s;
+        }
+        transition: opacity 1s ease-in-out;
+        opacity: 1;
+      }
     }
-    & > figure:nth-child(1) {
-      // z-index: 1;
-      // animation-delay: 0s;
-      background-image: url("/static/img/navi/bg1.jpg");
-    }
-    & > figure:nth-child(2) {
-      // z-index: 2;
-      animation-delay: 6s;
-      background-image: url("/static/img/navi/bg2.jpg");
-    }
-    & > figure:nth-child(3) {
-      // z-index: 3;
-      animation-delay: 12s;
-      background-image: url("/static/img/navi/bg3.jpg");
-    }
-    & > figure:nth-child(4) {
-      // z-index: 4;
-      animation-delay: 18s;
-      background-image: url("/static/img/navi/bg4.jpg");
-    }
-    & > figure:nth-child(5) {
-      // z-index: 5;
-      animation-delay: 24s;
-      background-image: url("/static/img/navi/bg5.jpg");
-    }
-    transition: opacity 0.5s ease-in-out;
   }
   nav.navbar {
     background-color: rgba(0, 0, 0, 1);
