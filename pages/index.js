@@ -193,33 +193,23 @@ function PhilosophyCards(props) {
   const descriptionStyle = {
     marginBottom: "10px"
   };
-  return (
-    <Column.Group centered>
-      {values.map((value, index) => (
-        <Column size={3}>
-          <Card style={{ height: "100%" }}>
-            <Card.Content textAlign="centered">
-              <Icon
-                textColor={value.iconColor}
-                size="large"
-                style={{ marginTop: "30px", marginBottom: "15px" }}
-              >
-                <FontAwesomeIcon
-                  textAlign="centered"
-                  size="5x"
-                  icon={value.icon}
-                />
-              </Icon>
-              <Title>{value.title}</Title>
-              {value.description.map(description => (
-                <p style={descriptionStyle}>{description}</p>
-              ))}
-            </Card.Content>
-          </Card>
-        </Column>
-      ))}
-    </Column.Group>
-  );
+  return values.map((value, index) => (
+    <Card style={{ height: "100%" }}>
+      <Card.Content textAlign="centered">
+        <Icon
+          textColor={value.iconColor}
+          size="large"
+          style={{ marginTop: "30px", marginBottom: "15px" }}
+        >
+          <FontAwesomeIcon textAlign="centered" size="5x" icon={value.icon} />
+        </Icon>
+        <Title>{value.title}</Title>
+        {value.description.map(description => (
+          <p style={descriptionStyle}>{description}</p>
+        ))}
+      </Card.Content>
+    </Card>
+  ));
 }
 
 function Quote(props) {
@@ -253,15 +243,18 @@ export const Home = {
   Quote
 };
 
+/*
+<Home.Top />
+<Home.Quote
+  quote="We're seriously impressed. You delivered everything we asked for and more."
+  size="small"
+  backgroundColor="black"
+  textColor="light"
+/>
+*/
+
 export default () => (
-  <Layout>
-    <Home.Top />
-    <Home.Quote
-      quote="We're seriously impressed. You delivered everything we asked for and more."
-      size="small"
-      backgroundColor="black"
-      textColor="light"
-    />
+  <Layout title="RSTLSS">
     <Home.About />
     <Home.Quote
       quote="It has been an absolute pleasure working with you guys. Smashing work."

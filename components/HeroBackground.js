@@ -38,8 +38,6 @@ class HeroBackground extends Component {
 
     const nextIndex = currentIndex < numFigures - 1 ? currentIndex + 1 : 0;
 
-    console.debug(`cycling bg to #${nextIndex}`);
-
     this.setState({
       currentIndex: nextIndex
     });
