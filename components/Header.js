@@ -9,15 +9,18 @@ const linkStyle = {
 
 // const Header = ({ fixed, collapsed }) => (
 //   <Navbar fixed={fixed ? "top" : false} color="black">
-
-function Header({ fixed, collapsed }) {
-  return (
+/*
     <nav
       className={`navbar is-black is-transparent ${
         fixed && collapsed ? "is-fixed-top" : ""
       }`}
       role="navigation"
     >
+*/
+
+function Header({ fixed, collapsed }) {
+  return (
+    <Navbar fixed={fixed && collapsed ? "top" : ""} transparent color="black">
       <Navbar.Brand>
         <Navbar.Burger />
       </Navbar.Brand>
@@ -26,11 +29,11 @@ function Header({ fixed, collapsed }) {
         <Navbar.Segment align="end">
           <Navbar.Item as="div" dropdown>
             <Navbar.Link>
-              <Link href="/">
+              <Link href="/services">
                 <a>Services</a>
               </Link>
             </Navbar.Link>
-            <Navbar.Dropdown>
+            <Navbar.Dropdown boxed>
               <Navbar.Item as="div">
                 <Link href="/">
                   <a>Media</a>
@@ -59,7 +62,7 @@ function Header({ fixed, collapsed }) {
                 <a>Projects</a>
               </Link>
             </Navbar.Link>
-            <Navbar.Dropdown>
+            <Navbar.Dropdown boxed>
               <Navbar.Item as="div">
                 <Link href="/projects">
                   <a>Our Work</a>
@@ -109,7 +112,7 @@ function Header({ fixed, collapsed }) {
                 <a>Join RSTLSS</a>
               </Link>
             </Navbar.Link>
-            <Navbar.Dropdown>
+            <Navbar.Dropdown boxed>
               <Navbar.Item as="div">
                 <Link href="/join">
                   <a>Work with Us</a>
@@ -134,7 +137,7 @@ function Header({ fixed, collapsed }) {
           </Navbar.Item>
           <Navbar.Item as="div">
             <Button.Group>
-              <Button color="success">
+              <Button outlined color="success">
                 <strong>Hire Us</strong>
                 <Icon>
                   <FontAwesomeIcon icon={faHammer} />
@@ -144,7 +147,7 @@ function Header({ fixed, collapsed }) {
           </Navbar.Item>
         </Navbar.Segment>
       </Navbar.Menu>
-    </nav>
+    </Navbar>
   );
 }
 

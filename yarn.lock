@@ -787,10 +787,10 @@
     humps "^2.0.1"
     prop-types "^15.5.10"
 
-"@rstlss/navi@0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@rstlss/navi/-/navi-0.0.13.tgz#4973263782a7787713ac7db3875e4ef8e94fa963"
-  integrity sha512-YwSRKY0hBLAv4P1jzgGsj3uCw1dtHT4g8sAYiftCgd1+GFmsny8HU9pGKObn54Q5VgSv7cvH4Tcdc/xHKD6PEA==
+"@rstlss/navi@0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@rstlss/navi/-/navi-0.0.16.tgz#06c3f8f7935f0d422b91803c22e9b49b0fee5b67"
+  integrity sha512-Pe2mB5aSilQzcG0pfPMPqFgi//tWZwQnO6ABWgpqfFO6mhaBMibxInB2aCGjKW0lIQT+iId+yBwGG8PnHOjd5Q==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.15"
     "@fortawesome/free-solid-svg-icons" "^5.7.2"

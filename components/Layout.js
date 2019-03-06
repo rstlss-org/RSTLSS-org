@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import Header from "./Header";
 import LayoutFooter from "./Footer";
 import { Navi } from "@rstlss/navi";
+import { Logo } from "./Logo";
 import Head from "next/head";
 import HeroBackground from "./HeroBackground";
 
@@ -25,9 +26,15 @@ const Layout = props => (
     </Head>
     <Navi
       navbar={Header}
+      collapsed={props.collapsed}
       herobg={herobg}
       collapseAt={1}
-      logo="/static/img/logo/v3/full-default.svg"
+      logo={Logo}
+      logoSrc="/static/img/logo/v3/full-default.svg"
+      logoAlt="RSTLSS"
+      onClick={() => {
+        console.debug("Navi clicked");
+      }}
     >
       {props.children}
       <LayoutFooter />
