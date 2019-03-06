@@ -154,7 +154,6 @@ test/temp
 
 # Build
 .tmp
-####################################
 .next
 .next/
 .next/*

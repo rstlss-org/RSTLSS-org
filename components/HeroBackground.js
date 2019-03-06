@@ -14,7 +14,7 @@ class HeroBackground extends Component {
     }
 
     if (!duration) {
-      throw new Error("missing duration");
+      console.error("missing duration");
     }
     this.state = {
       currentIndex: 0
