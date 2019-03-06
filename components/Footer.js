@@ -5,7 +5,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Flag from "react-flags";
 const LayoutFooter = () => (
-  <Footer backgroundColor="light" textColor="dark">
+  <Footer style={{ backgroundColor: "white" }} textColor="dark">
     <Container textAlign="centered">
       <p>
         <a href="mailto:rai@rbutera.com">

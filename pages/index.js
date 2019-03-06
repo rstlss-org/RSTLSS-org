@@ -50,7 +50,7 @@ function Top() {
 
 function About() {
   return (
-    <Section size="large">
+    <Section size="medium">
       <Column.Group>
         <Column textAlign="centered" size={8} offset={2}>
           <Title>Hello!</Title>
@@ -114,10 +114,7 @@ function Philosophy() {
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faChartLine,
       iconColor: "success"
-    }
-  ];
-
-  const values2 = [
+    },
     {
       title: "We Listen to Your Audience",
       description: [
@@ -156,7 +153,7 @@ function Philosophy() {
       <Section textAlign="centered">
         <Column.Group>
           <Column size={10} offset={1}>
-            <Title>Why Clients Choose RSTLSS</Title>
+            <Title>Philosophy & Values</Title>
 
             <Block />
             <p>
@@ -175,7 +172,6 @@ function Philosophy() {
           </Column>
         </Column.Group>
         <PhilosophyCards values={values} />
-        <PhilosophyCards values={values2} />
         <p>
           Find out more about the services we offer{" "}
           <Link href="/services">
@@ -194,21 +190,19 @@ function PhilosophyCards(props) {
     marginBottom: "10px"
   };
   return values.map((value, index) => (
-    <Card style={{ height: "100%" }}>
-      <Card.Content textAlign="centered">
-        <Icon
-          textColor={value.iconColor}
-          size="large"
-          style={{ marginTop: "30px", marginBottom: "15px" }}
-        >
-          <FontAwesomeIcon textAlign="centered" size="5x" icon={value.icon} />
-        </Icon>
-        <Title>{value.title}</Title>
-        {value.description.map(description => (
-          <p style={descriptionStyle}>{description}</p>
-        ))}
-      </Card.Content>
-    </Card>
+    <Section>
+      <Icon
+        textColor={value.iconColor}
+        size="large"
+        style={{ marginTop: "30px", marginBottom: "15px" }}
+      >
+        <FontAwesomeIcon textAlign="centered" size="5x" icon={value.icon} />
+      </Icon>
+      <Title size={4}>{value.title}</Title>
+      {value.description.map(description => (
+        <p style={descriptionStyle}>{description}</p>
+      ))}
+    </Section>
   ));
 }
 
@@ -226,10 +220,19 @@ function Quote(props) {
       size={size}
     >
       <Column.Group>
-        <Column size={8} offset={2}>
-          <Title subtitle size={4} textAlign="centered" textColor={textColor}>
-            "{quote}"
-          </Title>
+        <Column size={6} offset={3}>
+          <Card>
+            <Card.Content>
+              <Title
+                subtitle
+                size={5}
+                textAlign="centered"
+                textColor={textColor}
+              >
+                "{quote}"
+              </Title>
+            </Card.Content>
+          </Card>
         </Column>
       </Column.Group>
     </Section>
@@ -258,16 +261,16 @@ export default () => (
     <Home.About />
     <Home.Quote
       quote="It has been an absolute pleasure working with you guys. Smashing work."
-      size="large"
-      backgroundColor="black"
-      textColor="light"
+      size="small"
+      backgroundColor="light"
+      textColor="dark"
     />
     <Home.Philosophy />
     <Home.Quote
       quote="Wow! We love it, and I think [our customers] will love it even more."
       size="small"
-      backgroundColor="black"
-      textColor="light"
+      backgroundColor="light"
+      textColor="dark"
     />
   </Layout>
 );
