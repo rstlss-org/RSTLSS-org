@@ -171,10 +171,9 @@ function Header({ fixed, collapsed }) {
       <Navbar.Brand>
         <Navbar.Burger />
       </Navbar.Brand>
-      <div className="navbar-menu">
-        <div className="navbar-start" />
-
-        <div className="navbar-end">
+      <Navbar.Menu>
+        <Navbar.Segment align="start" />
+        <Navbar.Segment align="end">
           <Navbar.Item as="div" dropdown>
             <Navbar.Link>
               <Link href="/">
@@ -293,8 +292,8 @@ function Header({ fixed, collapsed }) {
               </Button>
             </Button.Group>
           </Navbar.Item>
-        </div>
-      </div>
+        </Navbar.Segment>
+      </Navbar.Menu>
     </nav>
   );
 }

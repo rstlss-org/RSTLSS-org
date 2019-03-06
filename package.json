@@ -30,6 +30,15 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2",
     "@zeit/next-css": "^1.0.2-canary.2",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-import-resolver-webpack": "^0.11.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.4",
     "typescript": "^3.3.3",
     "typings": "^2.1.1"
   },
@@ -37,6 +46,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "lint": "eslint src -c .eslintrc.json --ext js,jsx",
+    "deploy": "git push && yarn export && now out && sleep 1 && now alias $(pbpaste) rstlss && now alias $(pbpaste) rstlss.org"
   }
 }
