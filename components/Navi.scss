@@ -83,7 +83,7 @@ div#navi-root {
     transition: padding 0.25s;
     transition-timing-function: ease-in-out;
     &.collapsed {
-      padding-top: 0px;
+      padding-top: 52px;
     }
 
     padding-top: calc(100vh - 52px);
