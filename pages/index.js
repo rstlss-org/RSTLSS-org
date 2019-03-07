@@ -235,16 +235,12 @@ function Quote(props) {
       size={size}
     >
       <Column.Group>
-        <Column size={6} offset={3}>
-          <Title
-            italic
-            subtitle
-            size={6}
-            textAlign="centered"
-            textColor={textColor}
-          >
-            "{quote}"
-          </Title>
+        <Column size={4} offset={4}>
+          <div className="speech-bubble">
+            <Title subtitle size={6} textAlign="centered" textColor={textColor}>
+              "{quote}"
+            </Title>
+          </div>
         </Column>
       </Column.Group>
     </Section>
@@ -273,15 +269,15 @@ export default () => (
     <Home.About />
     <Home.Quote
       quote="It has been an absolute pleasure working with you guys. Smashing work."
-      size="small"
-      backgroundColor="white-bis"
+      size="medium"
+      backgroundColor="light"
       textColor="grey"
     />
     <Home.Philosophy />
     <Home.Quote
       quote="Wow! We love it, and I think [our customers] will love it even more."
-      size="small"
-      backgroundColor="white-bis"
+      size="medium"
+      backgroundColor="light"
       textColor="grey"
     />
   </Layout>

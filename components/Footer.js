@@ -5,13 +5,13 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Flag from "react-flags";
 const LayoutFooter = () => (
-  <Footer style={{ backgroundColor: "white" }} textColor="dark">
+  <Footer backgroundColor="white-bis" textColor="dark">
     <Container textAlign="centered">
       <p>
         <a href="mailto:rai@rbutera.com">
           <img
             alt="RSTLSS"
-            src="/static/img/logo/v3/black.svg"
+            src="/static/img/logo/v3/full-default.svg"
             style={{
               height: "20px",
               verticalAlign: "baseline",
@@ -26,7 +26,7 @@ const LayoutFooter = () => (
         </a>{" "}
         group.
       </p>
-      <p>
+      <p style={{ fontSize: "0.85rem" }}>
         <strong>Hand-crafted with</strong>{" "}
         <Icon color="danger">
           <FontAwesomeIcon icon={faHeart} />
@@ -43,10 +43,10 @@ const LayoutFooter = () => (
         <strong>United Kingdom</strong>
       </p>
 
-      <p style={{ fontStyle: "italic" }}>
+      <p style={{ fontStyle: "italic" }} style={{ fontSize: "0.75rem" }}>
         "stay <strong>RSTLSS</strong>"
       </p>
-      <p>&copy; 2019</p>
+      <p style={{ fontSize: "0.75rem" }}>&copy; 2019</p>
     </Container>
   </Footer>
 );
