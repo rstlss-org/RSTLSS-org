@@ -57829,7 +57829,7 @@ function Quote(props) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Title"], {
     subtitle: true,
-    size: 5,
+    size: 6,
     textAlign: "centered",
     textColor: textColor,
     __source: {

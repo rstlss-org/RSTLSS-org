@@ -50,32 +50,37 @@ function Top() {
 
 function About() {
   return (
-    <Section size="large">
+    <Section backgroundColor="white-bis" size="large">
       <Column.Group>
-        <Column textAlign="centered" size={8} offset={2}>
-          <Title>Hello!</Title>
-          <Generic as="p" textSize={6}>
-            We are{" "}
-            <img
-              src="/static/img/logo/v3/full-default.svg"
-              alt="RSTLSS"
-              style={{ height: "1.5em", position: "relative", top: "7px" }}
-            />{" "}
-            - an <strong>alliance</strong> of{" "}
-            <strong>passionate creatives</strong>, based out of{" "}
-            <strong>London</strong>.
-          </Generic>
-          <Block />
-          <Generic as="p" textSize={6}>
-            We <strong>work together</strong> to forge{" "}
-            <strong>engaging media</strong>, <strong>bold brands</strong> and{" "}
-            <strong>magical user experiences</strong>.
-          </Generic>
-          <Block />
-          <Generic as="p" textSize={6}>
-            We use <strong>collaboration</strong>, <strong>creativity</strong>,
-            and <strong>the latest and greatest in digital innovation.</strong>
-          </Generic>
+        <Column textAlign="centered" size={4} offset={4}>
+          <Card style={{ paddingTop: "50px", paddingBottom: "50px" }}>
+            <Card.Content>
+              <Title>Hello!</Title>
+              <Generic as="p" textSize={6}>
+                We are{" "}
+                <img
+                  src="/static/img/logo/v3/full-default.svg"
+                  alt="RSTLSS"
+                  style={{ height: "1.5em", position: "relative", top: "7px" }}
+                />{" "}
+                - an <strong>alliance</strong> of{" "}
+                <strong>passionate creatives</strong>, based out of{" "}
+                <strong>London</strong>.
+              </Generic>
+              <Block />
+              <Generic as="p" textSize={6}>
+                We <strong>work together</strong> to forge{" "}
+                <strong>engaging media</strong>, <strong>bold brands</strong>{" "}
+                and <strong>magical user experiences</strong>.
+              </Generic>
+              <Block />
+              <Generic as="p" textSize={6}>
+                We use <strong>collaboration</strong>,{" "}
+                <strong>creativity</strong>, and{" "}
+                <strong>the latest and greatest in digital innovation.</strong>
+              </Generic>
+            </Card.Content>
+          </Card>
         </Column>
       </Column.Group>
     </Section>
@@ -150,7 +155,7 @@ function Philosophy() {
 
   return (
     <div>
-      <Section size="large" textAlign="centered">
+      <Section backgroundColor="white-bis" size="large" textAlign="centered">
         <Column.Group>
           <Column size={8} offset={2}>
             <Title>Philosophy & Values</Title>
@@ -231,18 +236,15 @@ function Quote(props) {
     >
       <Column.Group>
         <Column size={6} offset={3}>
-          <Card>
-            <Card.Content>
-              <Title
-                subtitle
-                size={6}
-                textAlign="centered"
-                textColor={textColor}
-              >
-                "{quote}"
-              </Title>
-            </Card.Content>
-          </Card>
+          <Title
+            italic
+            subtitle
+            size={6}
+            textAlign="centered"
+            textColor={textColor}
+          >
+            "{quote}"
+          </Title>
         </Column>
       </Column.Group>
     </Section>
@@ -272,15 +274,15 @@ export default () => (
     <Home.Quote
       quote="It has been an absolute pleasure working with you guys. Smashing work."
       size="small"
-      backgroundColor="light"
-      textColor="dark"
+      backgroundColor="white-bis"
+      textColor="grey"
     />
     <Home.Philosophy />
     <Home.Quote
       quote="Wow! We love it, and I think [our customers] will love it even more."
       size="small"
-      backgroundColor="light"
-      textColor="dark"
+      backgroundColor="white-bis"
+      textColor="grey"
     />
   </Layout>
 );
