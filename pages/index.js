@@ -50,7 +50,7 @@ function Top() {
 
 function About() {
   return (
-    <Section backgroundColor="white-bis" size="large">
+    <Section backgroundColor="black" size="large">
       <Column.Group>
         <Column textAlign="centered" size={4} offset={4}>
           <Card style={{ paddingTop: "50px", paddingBottom: "50px" }}>

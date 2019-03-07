@@ -7287,6 +7287,27 @@ div#navi-root .navi-logo img {
     background: rgba(0, 0, 0, 0.1);
     background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.75) 6%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.1) 97%, rgba(0, 0, 0, 0.2) 100%); } }
 
+.speech-bubble {
+  position: relative;
+  background: #fff;
+  border-radius: 0.4em;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 95%;
+  width: 0;
+  height: 0;
+  border: 0.969em solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -0.484em;
+  margin-bottom: -0.969em; }
+
 .navi-hero .navi-logo {
   z-index: 100; }
 

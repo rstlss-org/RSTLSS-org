@@ -9,16 +9,18 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var rbx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rbx */ "./node_modules/rbx/index.js");
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
-/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
-/* harmony import */ var react_flags__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-flags */ "./node_modules/react-flags/lib/react-flags.js");
-/* harmony import */ var react_flags__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_flags__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var rbx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rbx */ "./node_modules/rbx/index.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
+/* harmony import */ var react_flags__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-flags */ "./node_modules/react-flags/lib/react-flags.js");
+/* harmony import */ var react_flags__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_flags__WEBPACK_IMPORTED_MODULE_7__);
+
 var _jsxFileName = "/Volumes/bigmanting/dev/rstlss/rstlss-org/components/Footer.js";
 
 
@@ -29,39 +31,39 @@ var _jsxFileName = "/Volumes/bigmanting/dev/rstlss/rstlss-org/components/Footer.
 
 
 var LayoutFooter = function LayoutFooter() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Footer"], {
-    style: {
-      backgroundColor: "white"
-    },
+  var _React$createElement;
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_3__["Footer"], {
+    backgroundColor: "white-bis",
     textColor: "dark",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_3__["Container"], {
     textAlign: "centered",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "mailto:rai@rbutera.com",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     alt: "RSTLSS",
-    src: "/static/img/logo/v3/black.svg",
+    src: "/static/img/logo/v3/full-default.svg",
     style: {
       height: "20px",
       verticalAlign: "baseline",
@@ -73,52 +75,55 @@ var LayoutFooter = function LayoutFooter() {
       lineNumber: 12
     },
     __self: this
-  })), " ", "- a", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  })), " ", "- a", " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "mailto:rai@rbutera.com",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     },
     __self: this
-  }, "CLOAKROOM LIMITED")), " ", "group."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "CLOAKROOM LIMITED")), " ", "group."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    style: {
+      fontSize: "0.85rem"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }, "Hand-crafted with"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Icon"], {
+  }, "Hand-crafted with"), " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
     color: "danger",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
-    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faHeart"],
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faHeart"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  })), " ", "in the", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Icon"], {
+  })), " ", "in the", " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_flags__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_flags__WEBPACK_IMPORTED_MODULE_7___default.a, {
     name: "GB",
     alt: "the United Kingdom",
     format: "svg",
@@ -128,28 +133,31 @@ var LayoutFooter = function LayoutFooter() {
       lineNumber: 36
     },
     __self: this
-  })), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+  })), " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
     },
     __self: this
-  }, "United Kingdom")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "United Kingdom")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", (_React$createElement = {
     style: {
       fontStyle: "italic"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
-  }, "\"stay ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    }
+  }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "style", {
+    fontSize: "0.75rem"
+  }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__source", {
+    fileName: _jsxFileName,
+    lineNumber: 46
+  }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__self", this), _React$createElement), "\"stay ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47
     },
     __self: this
-  }, "RSTLSS"), "\""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "RSTLSS"), "\""), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    style: {
+      fontSize: "0.75rem"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
@@ -57402,6 +57410,7 @@ function Top() {
 
 function About() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Section"], {
+    backgroundColor: "white-bis",
     size: "large",
     __source: {
       fileName: _jsxFileName,
@@ -57416,17 +57425,33 @@ function About() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Column"], {
     textAlign: "centered",
-    size: 8,
-    offset: 2,
+    size: 4,
+    offset: 4,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Title"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Card"], {
+    style: {
+      paddingTop: "50px",
+      paddingBottom: "50px"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 56
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Card"].Content, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Title"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
     },
     __self: this
   }, "Hello!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Generic"], {
@@ -57434,7 +57459,7 @@ function About() {
     textSize: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 59
     },
     __self: this
   }, "We are", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -57447,31 +57472,31 @@ function About() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 61
     },
     __self: this
   }), " ", "- an ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 66
     },
     __self: this
   }, "alliance"), " of", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 67
     },
     __self: this
   }, "passionate creatives"), ", based out of", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 68
     },
     __self: this
   }, "London"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Block"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 70
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Generic"], {
@@ -57479,37 +57504,37 @@ function About() {
     textSize: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 71
     },
     __self: this
   }, "We ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 72
     },
     __self: this
   }, "work together"), " to forge", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 73
     },
     __self: this
   }, "engaging media"), ", ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 73
     },
     __self: this
-  }, "bold brands"), " and", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+  }, "bold brands"), " ", "and ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 74
     },
     __self: this
   }, "magical user experiences"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Block"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 76
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Generic"], {
@@ -57517,28 +57542,28 @@ function About() {
     textSize: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 77
     },
     __self: this
   }, "We use ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 78
     },
     __self: this
-  }, "collaboration"), ", ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+  }, "collaboration"), ",", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 79
     },
     __self: this
-  }, "creativity"), ", and ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+  }, "creativity"), ", and", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 80
     },
     __self: this
-  }, "the latest and greatest in digital innovation.")))));
+  }, "the latest and greatest in digital innovation.")))))));
 }
 
 function Philosophy() {
@@ -57582,21 +57607,22 @@ function Philosophy() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152
+      lineNumber: 157
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Section"], {
+    backgroundColor: "white-bis",
     size: "large",
     textAlign: "centered",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 158
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Column"].Group, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 159
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Column"], {
@@ -57604,79 +57630,79 @@ function Philosophy() {
     offset: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 160
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Title"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 161
     },
     __self: this
   }, "Philosophy & Values"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Block"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158
+      lineNumber: 163
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 164
     },
     __self: this
   }, "At ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 160
+      lineNumber: 165
     },
     __self: this
   }, "RSTLSS"), " we have a", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 161
+      lineNumber: 166
     },
     __self: this
   }, "strong commitment"), " to our", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 162
+      lineNumber: 167
     },
     __self: this
   }, "philosophy and values"), ", which influence everything we do."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Block"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 170
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166
+      lineNumber: 171
     },
     __self: this
   }, "With ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 172
     },
     __self: this
   }, "over a decade and a half"), "'s experience in the creative industry, we have", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169
+      lineNumber: 174
     },
     __self: this
   }, "learned a lot"), " about what it takes", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170
+      lineNumber: 175
     },
     __self: this
   }, " to be successful in today's digital age:")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Column"].Group, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174
+      lineNumber: 179
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Column"], {
@@ -57684,33 +57710,33 @@ function Philosophy() {
     offset: 3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175
+      lineNumber: 180
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PhilosophyCards, {
     values: values,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176
+      lineNumber: 181
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 179
+      lineNumber: 184
     },
     __self: this
   }, "Find out more about the services we offer", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "/services",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181
+      lineNumber: 186
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 182
+      lineNumber: 187
     },
     __self: this
   }, "here")), ".")));
@@ -57726,19 +57752,19 @@ function PhilosophyCards(props) {
       key: index.toString(),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 197
+        lineNumber: 202
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Card"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 198
+        lineNumber: 203
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Card"].Content, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 199
+        lineNumber: 204
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Icon"], {
@@ -57750,7 +57776,7 @@ function PhilosophyCards(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 200
+        lineNumber: 205
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeIcon"], {
@@ -57759,14 +57785,14 @@ function PhilosophyCards(props) {
       icon: value.icon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 205
+        lineNumber: 210
       },
       __self: this
     })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Title"], {
       size: 4,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 207
+        lineNumber: 212
       },
       __self: this
     }, value.title), value.description.map(function (description, descIndex) {
@@ -57775,7 +57801,7 @@ function PhilosophyCards(props) {
         style: descriptionStyle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 209
+          lineNumber: 214
         },
         __self: this
       }, description);
@@ -57798,33 +57824,28 @@ function Quote(props) {
     size: size,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 227
+      lineNumber: 232
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Column"].Group, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 232
+      lineNumber: 237
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Column"], {
-    size: 6,
-    offset: 3,
+    size: 4,
+    offset: 4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 233
+      lineNumber: 238
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Card"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "speech-bubble",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 234
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Card"].Content, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 235
+      lineNumber: 239
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Title"], {
@@ -57834,10 +57855,10 @@ function Quote(props) {
     textColor: textColor,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 236
+      lineNumber: 240
     },
     __self: this
-  }, "\"", quote, "\""))))));
+  }, "\"", quote, "\"")))));
 }
 
 var Home = {
@@ -57860,39 +57881,39 @@ var Home = {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 270
+      lineNumber: 268
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Home.About, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 271
+      lineNumber: 269
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Home.Quote, {
     quote: "It has been an absolute pleasure working with you guys. Smashing work.",
-    size: "small",
+    size: "medium",
     backgroundColor: "light",
-    textColor: "dark",
+    textColor: "grey",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 272
+      lineNumber: 270
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Home.Philosophy, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 278
+      lineNumber: 276
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Home.Quote, {
     quote: "Wow! We love it, and I think [our customers] will love it even more.",
-    size: "small",
+    size: "medium",
     backgroundColor: "light",
-    textColor: "dark",
+    textColor: "grey",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 279
+      lineNumber: 277
     },
     __self: this
   }));
