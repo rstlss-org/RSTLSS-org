@@ -34,16 +34,16 @@ function Header({ fixed, collapsed }) {
             <Navbar.Dropdown boxed>
               <Navbar.Item href="/services">Overview</Navbar.Item>
               <Navbar.Divider />
-              <Navbar.Item as="a" href="/services/media">
+              <Navbar.Item as="a" href="/services#media">
                 Media
               </Navbar.Item>
-              <Navbar.Item as="a" href="/services/branding">
+              <Navbar.Item as="a" href="/services#branding">
                 Branding
               </Navbar.Item>
-              <Navbar.Item as="a" href="/services/web">
+              <Navbar.Item as="a" href="/services#web">
                 Web
               </Navbar.Item>
-              <Navbar.Item as="a" href="/services/app">
+              <Navbar.Item as="a" href="/services#app">
                 App
               </Navbar.Item>
             </Navbar.Dropdown>
@@ -87,13 +87,13 @@ function Header({ fixed, collapsed }) {
                 Work with Us
               </Navbar.Item>
               <Navbar.Divider />
-              <Navbar.Item as="a" href="/join/hipsters">
+              <Navbar.Item as="a" href="/join#hipsters">
                 for Hipsters
               </Navbar.Item>
-              <Navbar.Item as="a" href="/join/hackers">
+              <Navbar.Item as="a" href="/join#hackers">
                 for Hackers
               </Navbar.Item>
-              <Navbar.Item as="a" href="/join/hustlers">
+              <Navbar.Item as="a" href="/join#hustlers">
                 for Hustlers
               </Navbar.Item>
             </Navbar.Dropdown>

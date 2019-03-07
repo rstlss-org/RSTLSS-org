@@ -267,7 +267,7 @@ export const Home = {
 */
 
 export default () => (
-  <Layout title="RSTLSS">
+  <Layout>
     <Home.About />
     <Home.Quote
       quote="It has been an absolute pleasure working with you guys. Smashing work."
