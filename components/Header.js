@@ -27,11 +27,13 @@ function Header({ fixed, collapsed }) {
       <Navbar.Menu>
         <Navbar.Segment align="start" />
         <Navbar.Segment align="end">
-          <Navbar.Item as="a" dropdown>
+          <Navbar.Item as="a" dropdown hoverable>
             <Link href="/services">
               <Navbar.Link>Services</Navbar.Link>
             </Link>
             <Navbar.Dropdown boxed>
+              <Navbar.Item href="/services">Overview</Navbar.Item>
+              <Navbar.Divider />
               <Navbar.Item as="a" href="/services/media">
                 Media
               </Navbar.Item>
@@ -46,7 +48,7 @@ function Header({ fixed, collapsed }) {
               </Navbar.Item>
             </Navbar.Dropdown>
           </Navbar.Item>
-          <Navbar.Item as="a" dropdown>
+          <Navbar.Item as="a" dropdown hoverable>
             <Link href="/projects">
               <Navbar.Link>Projects</Navbar.Link>
             </Link>
@@ -76,7 +78,7 @@ function Header({ fixed, collapsed }) {
               </Navbar.Item>
             </Navbar.Dropdown>
           </Navbar.Item>
-          <Navbar.Item as="a" dropdown>
+          <Navbar.Item as="a" dropdown hoverable>
             <Link href="/join">
               <Navbar.Link>Join</Navbar.Link>
             </Link>
@@ -84,18 +86,19 @@ function Header({ fixed, collapsed }) {
               <Navbar.Item as="a" href="/join">
                 Work with Us
               </Navbar.Item>
+              <Navbar.Divider />
               <Navbar.Item as="a" href="/join/hipsters">
-                Hipsters
+                for Hipsters
               </Navbar.Item>
               <Navbar.Item as="a" href="/join/hackers">
-                Hackers
+                for Hackers
               </Navbar.Item>
               <Navbar.Item as="a" href="/join/hustlers">
-                Hustlers
+                for Hustlers
               </Navbar.Item>
             </Navbar.Dropdown>
           </Navbar.Item>
-          <Navbar.Item as="a">
+          <Navbar.Item as="a" href="/hire">
             <Button.Group>
               <Button outlined color="success">
                 <strong>Hire Us</strong>

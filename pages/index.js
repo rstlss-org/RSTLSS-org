@@ -50,11 +50,11 @@ function Top() {
 
 function About() {
   return (
-    <Section size="medium">
+    <Section size="large">
       <Column.Group>
         <Column textAlign="centered" size={8} offset={2}>
           <Title>Hello!</Title>
-          <Generic as="p" textSize="5">
+          <Generic as="p" textSize={6}>
             We are{" "}
             <img
               src="/static/img/logo/v3/full-default.svg"
@@ -66,13 +66,13 @@ function About() {
             <strong>London</strong>.
           </Generic>
           <Block />
-          <Generic as="p" textSize="5">
+          <Generic as="p" textSize={6}>
             We <strong>work together</strong> to forge{" "}
             <strong>engaging media</strong>, <strong>bold brands</strong> and{" "}
             <strong>magical user experiences</strong>.
           </Generic>
           <Block />
-          <Generic as="p" textSize="5">
+          <Generic as="p" textSize={6}>
             We use <strong>collaboration</strong>, <strong>creativity</strong>,
             and <strong>the latest and greatest in digital innovation.</strong>
           </Generic>
@@ -103,7 +103,7 @@ function Philosophy() {
       ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faFistRaised,
-      iconColor: "grey"
+      iconColor: "danger"
     },
     {
       title: "Impact-Focused",
@@ -123,7 +123,7 @@ function Philosophy() {
       ],
       image: "/static/img/backdrops/annie-spratt-253797-unsplash-1080p.jpg",
       icon: faUsers,
-      iconColor: "#ff0000"
+      iconColor: "primary"
     },
     {
       title: "'Magic'",
@@ -150,9 +150,9 @@ function Philosophy() {
 
   return (
     <div>
-      <Section textAlign="centered">
+      <Section size="large" textAlign="centered">
         <Column.Group>
-          <Column size={10} offset={1}>
+          <Column size={8} offset={2}>
             <Title>Philosophy & Values</Title>
 
             <Block />
@@ -171,7 +171,11 @@ function Philosophy() {
             </p>
           </Column>
         </Column.Group>
-        <PhilosophyCards values={values} />
+        <Column.Group>
+          <Column size={6} offset={3}>
+            <PhilosophyCards values={values} />
+          </Column>
+        </Column.Group>
         <p>
           Find out more about the services we offer{" "}
           <Link href="/services">
@@ -190,18 +194,24 @@ function PhilosophyCards(props) {
     marginBottom: "10px"
   };
   return values.map((value, index) => (
-    <Section>
-      <Icon
-        textColor={value.iconColor}
-        size="large"
-        style={{ marginTop: "30px", marginBottom: "15px" }}
-      >
-        <FontAwesomeIcon textAlign="centered" size="5x" icon={value.icon} />
-      </Icon>
-      <Title size={4}>{value.title}</Title>
-      {value.description.map(description => (
-        <p style={descriptionStyle}>{description}</p>
-      ))}
+    <Section key={index.toString()}>
+      <Card>
+        <Card.Content>
+          <Icon
+            textColor={value.iconColor}
+            size="large"
+            style={{ marginTop: "30px", marginBottom: "15px" }}
+          >
+            <FontAwesomeIcon textAlign="centered" size="5x" icon={value.icon} />
+          </Icon>
+          <Title size={4}>{value.title}</Title>
+          {value.description.map((description, descIndex) => (
+            <p key={`desc${descIndex}`} style={descriptionStyle}>
+              {description}
+            </p>
+          ))}
+        </Card.Content>
+      </Card>
     </Section>
   ));
 }

@@ -26,9 +26,7 @@ class HeroBackground extends Component {
   };
 
   componentWillUnmount = () => {
-    this.intervalSub &&
-      this.intervalSub.unsubscribe &&
-      this.intervalSub.unsubscribe();
+    this.intervalSub.unsubscribe();
   };
 
   cycleBg = () => {
@@ -51,14 +49,13 @@ class HeroBackground extends Component {
 
     return src.map((value, index) => {
       return (
-        <>
-          <figure
-            className={index === currentIndex ? "current" : "hidden"}
-            style={{
-              backgroundImage: `url("${src[index]}")`
-            }}
-          />
-        </>
+        <figure
+          key={`herobg${index}`}
+          className={index === currentIndex ? "current" : "hidden"}
+          style={{
+            backgroundImage: `url("${src[index]}")`
+          }}
+        />
       );
     });
   }

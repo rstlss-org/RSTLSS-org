@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 export default () => (
-  <Layout fixed collapsed>
+  <Layout fixed collapsed title="Projects">
     <h1>Projects</h1>
     <p>This is the Projects page</p>
   </Layout>
