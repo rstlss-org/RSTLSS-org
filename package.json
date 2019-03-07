@@ -46,8 +46,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export",
+    "export": "next build && next export -o dist",
     "lint": "eslint src -c .eslintrc.json --ext js,jsx",
-    "deploy": "git push && yarn export && now out && sleep 1 && now alias $(pbpaste) rstlss && now alias $(pbpaste) rstlss.org"
+    "deploy": "git push && yarn export && now dist && sleep 1 && now alias $(pbpaste) rstlss && now alias $(pbpaste) rstlss.org",
+    "now-build": "next build && next export -o dist"
   }
 }

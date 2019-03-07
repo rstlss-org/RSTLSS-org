@@ -1,5 +1,5 @@
 // pages/index.js
-
+console.debug("index.js v0.1 loaded");
 import Layout from "../components/Layout";
 import {
   Icon,
@@ -235,7 +235,7 @@ function Quote(props) {
             <Card.Content>
               <Title
                 subtitle
-                size={5}
+                size={6}
                 textAlign="centered"
                 textColor={textColor}
               >

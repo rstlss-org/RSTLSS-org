@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Hero, Container, Title, Section, Column, Content } from "rbx";
 import { overview, branding, app, media, web } from "./services-content.json";
+import { SerifTitle } from "../components/title";
 
 function ServiceSection({ category }) {
   const { title, subtitle, content, id } = category;
@@ -37,7 +38,7 @@ export default () => (
     <Hero color="black" size="large">
       <Hero.Body>
         <Container>
-          <Title>Services</Title>
+          <SerifTitle>Services</SerifTitle>
           <Title as="h2" subtitle>
             We can turn your vision into reality.
           </Title>

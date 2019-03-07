@@ -1,4 +1,11 @@
 {
   "name": "rstlss",
-  "version": 2
+  "version": 2,
+  "alias": ["rstlss.org", "www.rstlss.org"],
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ]
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Hero, Container, Title, Column } from "rbx";
+import { SerifTitle } from "../components/title";
 import Layout from "../components/Layout";
 
 export default () => (
@@ -7,7 +8,7 @@ export default () => (
     <Hero color="black" size="large">
       <Hero.Body>
         <Container>
-          <Title>Join Us</Title>
+          <SerifTitle>Join Us</SerifTitle>
           <Title as="h2" subtitle>
             This page is under construction.
           </Title>

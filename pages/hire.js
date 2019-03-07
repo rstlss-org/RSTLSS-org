@@ -7,7 +7,7 @@ export default () => (
     <Hero color="black" size="large">
       <Hero.Body>
         <Container>
-          <Title>Hire Us</Title>
+          <Title className="serif">Hire Us</Title>
           <Title as="h2" subtitle>
             This page is under construction.
           </Title>

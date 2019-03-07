@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Domine");
+// @import url("https://fonts.googleapis.com/css?family=Merriweather");
+$family-primary: "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI",
+  "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+  "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-secondary: "Domine", sans-serif;
+$family-tertiary: "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI",
+  "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+  "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$body-family: $family-primary;
+
+.font-secondary {
+  font-family: $family-secondary;
+}
+
+.font-alt {
+  font-family: $family-tertiary;
+}
+
+.title {
+  font-family: $family-primary;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  // letter-spacing: 2px;
+}
+
+// .subtitle {
+//   font-family: $family-tertiary;
+//   letter-spacing: 1px;
+//   // text-transform: uppercase;
+// }
