@@ -39,7 +39,7 @@ div#navi-root {
     width: 100vw;
   }
   &.navi-collapsed .navi-hero {
-    z-index: 1000;
+    // z-index: 1000;
     transition: all 0.23s ease-in-out;
     .navi-logo {
       transition: all 0.23s ease-in-out;
@@ -51,7 +51,7 @@ div#navi-root {
       }
     }
   }
-  &.navi-collapsed .navi-nav {
+  .navi-nav {
     z-index: 500;
   }
   &.navi.navi-expanded {

@@ -27,6 +27,7 @@ const Layout = props => (
     <Navi
       navbar={Header}
       collapsed={props.collapsed}
+      fixed={props.collapsed}
       herobg={herobg}
       collapseAt={1}
       logo={Logo}
