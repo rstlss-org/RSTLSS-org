@@ -57410,7 +57410,7 @@ function Top() {
 
 function About() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(rbx__WEBPACK_IMPORTED_MODULE_2__["Section"], {
-    backgroundColor: "white-bis",
+    backgroundColor: "black",
     size: "large",
     __source: {
       fileName: _jsxFileName,
