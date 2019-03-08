@@ -265,7 +265,7 @@ export const Home = {
 */
 
 export default () => (
-  <Layout>
+  <Layout expandOnClick>
     <Home.About />
     <Home.Quote
       quote="It has been an absolute pleasure working with you guys. Smashing work."
