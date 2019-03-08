@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import { Navbar, Button, Icon } from "rbx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +19,7 @@ const linkStyle = {
     >
 */
 
-function Header({ fixed, collapsed }) {
+function Header() {
   return (
     <Navbar className="is-fixed-top" transparent color="black">
       <Navbar.Brand>
@@ -55,26 +56,26 @@ function Header({ fixed, collapsed }) {
             <Navbar.Dropdown boxed>
               <Navbar.Item href="/projects">Our Work</Navbar.Item>
               <Navbar.Divider />
-              <Navbar.Item href="/showcases/cloakroom" as="a">
+              <Navbar.Item href="/showcases#cloakroom" as="a">
                 Cloakroom
               </Navbar.Item>
-              <Navbar.Item href="/showcases/chan" as="a">
+              <Navbar.Item href="/showcases#chan" as="a">
                 Chan
               </Navbar.Item>
-              <Navbar.Item href="/showcases/JRNL" as="a">
+              <Navbar.Item href="/showcases#JRNL" as="a">
                 Jour
               </Navbar.Item>
-              <Navbar.Item href="/showcases/" as="a">
+              <Navbar.Item href="/showcases#" as="a">
+                Navi
+              </Navbar.Item>
+              <Navbar.Item href="/showcases#" as="a">
                 RAIGASM
               </Navbar.Item>
-              <Navbar.Item href="/showcases/tekkers" as="a">
+              <Navbar.Item href="/showcases#tekkers" as="a">
                 Tekkers
               </Navbar.Item>
-              <Navbar.Item href="/showcases/" as="a">
-                Hypegen
-              </Navbar.Item>
-              <Navbar.Item href="/showcases/" as="a">
-                RSTLSS BEATS
+              <Navbar.Item href="/showcases#" as="a">
+                RSTLSS Sounds
               </Navbar.Item>
             </Navbar.Dropdown>
           </Navbar.Item>
