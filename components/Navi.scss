@@ -115,7 +115,10 @@ div#navi-root {
   left: 0;
   transition: all 0.25s ease-in-out;
   transition: height 0.25s ease-in-out;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
   .navi-collapsed & {
+    opacity: 0;
     transition: height 0s;
     display: inline-block;
     height: 0px;
@@ -138,7 +141,7 @@ div#navi-root {
   z-index: 2;
   width: 100%;
   text-align: center;
-  bottom: 100px;
+  bottom: 75px;
   animation: pulse 4s infinite;
   .navi-scrolldown-text {
     opacity: 1;
