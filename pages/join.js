@@ -1,7 +1,5 @@
 import React from "react";
 import { Hero, Container, Title, Column } from "rbx";
-
-import { SerifTitle } from "../components/title";
 import Layout from "../components/Layout";
 import ArtHero from "../components/ArtHero";
 
@@ -14,7 +12,15 @@ export default () => (
     >
       <Hero.Body>
         <Container>
-          <SerifTitle>Join Us</SerifTitle>
+          <Title>
+            Join{" "}
+            <img
+              className="hero-title-logo"
+              src="/static/img/logo/v3/full-default.svg"
+              alt="RSTLSS"
+              style={{ height: "45px", position: "relative", top: "10px" }}
+            />
+          </Title>
           <Title as="h2" subtitle>
             This page is under construction.
           </Title>

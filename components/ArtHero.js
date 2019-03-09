@@ -1,5 +1,6 @@
 import React from "react";
 import { Hero } from "rbx";
+import "./ArtHero.scss";
 
 function ArtHero(props) {
   const { background } = props;
@@ -7,6 +8,7 @@ function ArtHero(props) {
     <>
       <Hero
         {...props}
+        className="art-hero"
         style={{
           backgroundImage: `url("${background}")`,
           backgroundSize: "cover",
