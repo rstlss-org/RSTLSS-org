@@ -1,11 +1,17 @@
 import React from "react";
 import { Hero, Container, Title, Column } from "rbx";
+
 import { SerifTitle } from "../components/title";
 import Layout from "../components/Layout";
+import ArtHero from "../components/ArtHero";
 
 export default () => (
   <Layout fixed collapsed title="Join Us">
-    <Hero color="black" size="large">
+    <ArtHero
+      background="/static/img/vector-art/SVG/hero7.svg"
+      color="warning"
+      size="large"
+    >
       <Hero.Body>
         <Container>
           <SerifTitle>Join Us</SerifTitle>
@@ -14,7 +20,7 @@ export default () => (
           </Title>
         </Container>
       </Hero.Body>
-    </Hero>
+    </ArtHero>
     <Column.Group>
       <Column size={10} offset={1}>
         <p>Coming Soon.</p>

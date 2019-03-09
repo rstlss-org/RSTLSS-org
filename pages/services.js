@@ -4,6 +4,7 @@ import { Hero, Container, Title, Section, Column, Content } from "rbx";
 import { overview, branding, app, media, web } from "./services-content.json";
 import { SerifTitle } from "../components/title";
 
+import ArtHero from "../components/ArtHero";
 function ServiceSection({ category }) {
   const { title, subtitle, content, id } = category;
 
@@ -35,7 +36,11 @@ function ServiceSection({ category }) {
 
 export default () => (
   <Layout fixed collapsed title="Services">
-    <Hero color="black" size="large">
+    <ArtHero
+      background="/static/img/vector-art/SVG/hero2.svg"
+      color="black"
+      size="large"
+    >
       <Hero.Body>
         <Container>
           <SerifTitle>Services</SerifTitle>
@@ -44,7 +49,7 @@ export default () => (
           </Title>
         </Container>
       </Hero.Body>
-    </Hero>
+    </ArtHero>
     <Column.Group>
       <Column size={10} offset={1}>
         {[media, branding, web, app].map((category, index) => (

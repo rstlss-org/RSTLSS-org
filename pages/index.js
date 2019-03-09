@@ -196,7 +196,8 @@ function Philosophy() {
 function PhilosophyCards(props) {
   const { values } = props;
   const descriptionStyle = {
-    marginBottom: "10px"
+    marginBottom: "10px",
+    paddingBottom: "20px"
   };
   return values.map((value, index) => (
     <Section key={index.toString()}>
@@ -209,7 +210,9 @@ function PhilosophyCards(props) {
           >
             <FontAwesomeIcon textAlign="centered" size="5x" icon={value.icon} />
           </Icon>
-          <Title size={4}>{value.title}</Title>
+          <Title size={4} style={{ marginTop: "20px" }}>
+            {value.title}
+          </Title>
           {value.description.map((description, descIndex) => (
             <p key={`desc${descIndex}`} style={descriptionStyle}>
               {description}
