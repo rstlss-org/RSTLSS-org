@@ -32,7 +32,7 @@ function innerLayout(props) {
       herobg={herobg}
       collapseAt={1}
       logo={Logo}
-      logoSrc="/static/img/logo/v3/full-default.svg"
+      logoSrc="/static/img/logo/v4/rstlss-animated.svg"
       logoAlt="RSTLSS"
       fixed
       onClick={() => {
