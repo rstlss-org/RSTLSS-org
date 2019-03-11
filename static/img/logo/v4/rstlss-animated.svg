@@ -4,7 +4,7 @@
     <style>
 @keyframes textcolor_t { 0% { transform: translate(-568px,120px); } 77.1929% { transform: translate(-568px,120px); } 100% { transform: translate(-145.7px,120px); } }
 @keyframes logo-text_t { 0% { transform: translate(0px,-120px); } 42.1052% { transform: translate(0px,-120px); } 50.8771% { transform: translate(0px,0px); } 100% { transform: translate(0px,0px); } }
-@keyframes cover_t { 0% { transform: translate(-63.3px,0px); } 42.1052% { transform: translate(-63.3px,0px); } 50.8771% { transform: translate(-63px,120px); } 91.228% { transform: translate(420px,120px); } 100% { transform: translate(420px,120px); } }
+@keyframes cover_t { 0% { transform: translate(-63.3px,0px) scale(1,1); } 42.1052% { transform: translate(-63.3px,0px) scale(1,1); } 50.8771% { transform: translate(-63px,120px) scale(1,1); } 89.4736% { transform: translate(399.000033px,120px) scale(1,1); } 91.228% { transform: translate(420px,120px) scale(0,0); } 100% { transform: translate(420px,120px) scale(0,0); } }
     </style>
     <title>rstlss-logo-animated</title>
     <desc>Created with Sketch.</desc>
