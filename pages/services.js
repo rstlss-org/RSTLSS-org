@@ -52,7 +52,7 @@ export default () => (
     </ArtHero>
     <Column.Group>
       <Column size={10} offset={1}>
-        {[media, branding, web, app].map((category, index) => (
+        {[web, app, branding, media].map((category, index) => (
           <ServiceSection key={index.toString()} category={category} />
         ))}
       </Column>

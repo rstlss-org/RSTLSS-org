@@ -35,17 +35,17 @@ function Header() {
             <Navbar.Dropdown boxed>
               <Navbar.Item href="/services">Overview</Navbar.Item>
               <Navbar.Divider />
-              <Navbar.Item as="a" href="/services#media">
-                Media
+              <Navbar.Item as="a" href="/services#web">
+                Web Design/Development
+              </Navbar.Item>
+              <Navbar.Item as="a" href="/services#app">
+                App Design/Development
               </Navbar.Item>
               <Navbar.Item as="a" href="/services#branding">
                 Branding
               </Navbar.Item>
-              <Navbar.Item as="a" href="/services#web">
-                Web
-              </Navbar.Item>
-              <Navbar.Item as="a" href="/services#app">
-                App
+              <Navbar.Item as="a" href="/services#media">
+                Media
               </Navbar.Item>
             </Navbar.Dropdown>
           </Navbar.Item>
