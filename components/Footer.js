@@ -8,7 +8,7 @@ const LayoutFooter = () => (
   <Footer backgroundColor="white-bis" textColor="dark">
     <Container textAlign="centered">
       <p>
-        <a href="mailto:rai@rbutera.com">
+        <a href="mailto:hello@rstlss.org">
           <img
             alt="RSTLSS"
             src="/static/img/logo/v3/full-default.svg"
@@ -20,12 +20,13 @@ const LayoutFooter = () => (
             }}
           />
         </a>{" "}
-        - a{" "}
-        <a href="mailto:rai@rbutera.com">
-          <strong>CLOAKROOM LIMITED</strong>
+        - an{" "}
+        <a href="mailto:hello@rstlss.org">
+          <strong>MMG</strong>
         </a>{" "}
-        group.
+        company.
       </p>
+
       <p style={{ fontSize: "0.85rem" }}>
         <strong>Hand-crafted with</strong>{" "}
         <Icon color="danger">
