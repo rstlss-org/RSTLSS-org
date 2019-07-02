@@ -99,7 +99,7 @@ function Header() {
               </Navbar.Item>
             </Navbar.Dropdown>
           </Navbar.Item>
-          <Navbar.Item as="a" href="/hire">
+          <Navbar.Item as="a" href="mailto:hello@rstlss.org">
             <Button.Group>
               <Button outlined color="success">
                 <strong>Hire Us</strong>
