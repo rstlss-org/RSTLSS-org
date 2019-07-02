@@ -47,6 +47,18 @@ const LayoutFooter = () => (
         "stay <strong>RSTLSS</strong>"
       </p>
       <p style={{ fontSize: "0.75rem" }}>&copy; 2019</p>
+
+      <p
+        className="footer-legal"
+        style={{
+          fontSize: "0.65rem",
+          opacity: "0.6"
+        }}
+      >
+        <em>RSTLSS LTD</em> (company number 12031646) incorporated in England
+        and Wales. Registered business address: Kemp House, 160 City Road,
+        London, EC1V 2NX.
+      </p>
     </Container>
   </Footer>
 );
