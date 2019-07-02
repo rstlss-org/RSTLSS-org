@@ -21,7 +21,11 @@ export default () => (
     </ArtHero>
     <Column.Group>
       <Column size={10} offset={1}>
-        <p>Coming Soon.</p>
+        <p>
+          We are very busy building value for our clients and building the rest
+          of this website. If you're interested in our services please contact
+          us at <a href="mailto:hello@rstlss.org">hello@rstlss.org</a>
+        </p>
       </Column>
     </Column.Group>
   </Layout>
