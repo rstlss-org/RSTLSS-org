@@ -1,7 +1,6 @@
 {
-  "name": "rstlss",
+  "name": "rstlss-org",
   "version": 2,
-  "alias": ["rstlss.org", "www.rstlss.org"],
   "builds": [
     {
       "src": "next.config.js",
