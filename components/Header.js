@@ -49,56 +49,6 @@ function Header() {
               </Navbar.Item>
             </Navbar.Dropdown>
           </Navbar.Item>
-          <Navbar.Item as="a" dropdown hoverable>
-            <Link href="/projects">
-              <Navbar.Link>Projects</Navbar.Link>
-            </Link>
-            <Navbar.Dropdown boxed>
-              <Navbar.Item href="/projects">Our Work</Navbar.Item>
-              <Navbar.Divider />
-              <Navbar.Item href="/showcases#cloakroom" as="a">
-                Cloakroom
-              </Navbar.Item>
-              <Navbar.Item href="/showcases#chan" as="a">
-                Chan
-              </Navbar.Item>
-              <Navbar.Item href="/showcases#JRNL" as="a">
-                Jour
-              </Navbar.Item>
-              <Navbar.Item href="/showcases#" as="a">
-                Navi
-              </Navbar.Item>
-              <Navbar.Item href="/showcases#" as="a">
-                RAIGASM
-              </Navbar.Item>
-              <Navbar.Item href="/showcases#tekkers" as="a">
-                Tekkers
-              </Navbar.Item>
-              <Navbar.Item href="/showcases#" as="a">
-                RSTLSS Sounds
-              </Navbar.Item>
-            </Navbar.Dropdown>
-          </Navbar.Item>
-          <Navbar.Item as="a" dropdown hoverable>
-            <Link href="/join">
-              <Navbar.Link>Join</Navbar.Link>
-            </Link>
-            <Navbar.Dropdown boxed>
-              <Navbar.Item as="a" href="/join">
-                Work with Us
-              </Navbar.Item>
-              <Navbar.Divider />
-              <Navbar.Item as="a" href="/join#hipsters">
-                for Hipsters
-              </Navbar.Item>
-              <Navbar.Item as="a" href="/join#hackers">
-                for Hackers
-              </Navbar.Item>
-              <Navbar.Item as="a" href="/join#hustlers">
-                for Hustlers
-              </Navbar.Item>
-            </Navbar.Dropdown>
-          </Navbar.Item>
           <Navbar.Item as="a" href="mailto:hello@rstlss.org">
             <Button.Group>
               <Button outlined color="success">
