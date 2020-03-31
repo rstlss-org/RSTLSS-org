@@ -19,7 +19,7 @@
     "@zeit/next-typescript": "^1.1.1",
     "bulma": "^0.7.4",
     "bulmaswatch": "^0.7.2",
-    "next": "^8.0.1",
+    "next": "^9.3.2",
     "node-sass": "^4.11.0",
     "rambda": "^2.3.1",
     "rbx": "^2.1.0",
